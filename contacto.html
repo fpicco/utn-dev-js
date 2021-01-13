@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plantas Ornamentales</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://file.myfontastic.com/wJpx37CFbFkHmmpgNSbYp4/icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <nav class="header-content__nav" id="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="index.html">Inicio </a></li>
+                    <li class="nav__li"><a href="inspiracion.html">Inspiración </a></li>
+                    <li class="nav__li"><a href="contacto.html">Contacto </a></li>
+                </ul>
+
+                <ul class="redes__ul">
+                    <li class="redes__li"><a href="https://www.twitter.com" class="icon-twitter" target="_blank"></a>
+                    </li>
+                    <li class="redes__li"><a href="https://www.instagram.com" class="icon-instagram"
+                            target="_blank"></a></li>
+                    <li class="redes__li"><a href="https://www.facebook.com" class="icon-facebook" target="_blank"></a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="header-content__redes" id="frase">
+                <h4><span id="span__mariposa">"El secreto no es correr detrás de las mariposas… </span>
+                    <span id="span__vengan"> es cuidar el jardín para que ellas vengan a tí." - MQ</span></h4>
+            </div>
+        </div>
+        <a href="index.html"><img src="imagenes/logo.png" alt="Logo de la página Web" id="logo"></a>
+    </header>
+
+    <section id="contacto__section">
+        <div class="contacto__section-div">
+            <h2 class="contacto__section-h2">¡Envianos tu consulta!</h2>
+        </div>
+        <div class="contacto__container">
+            <div>
+                <figure>
+                    <img src="imagenes/f_contacto.jpg" alt="Foto de Tulipanes" class="contacto__foto">
+                </figure>
+            </div>
+
+            <form class="contacto__formulario" method="POST" action="#">
+                <ul>
+                    <li>Nombre completo <input type="text" name="nombre" required></li>
+                    <li>Email <input type="email" name="email" required> </li>
+                    <li>Telefono <input type="number" name="tel" required> </li>
+                    <li>Motivo de consulta
+                        <select name="motivos" required>
+                            <option value="">Elige una opción</option>
+                            <option value="consultas"> Consultas varias</option>
+                            <option value="viveros"> Viveros </option>
+                            <option value="clima"> Clima </option>
+                            <option value="asistencia"> Asistencia personalizada</option>
+                            <option value="otro"> Otro</option>
+                        </select>
+                    </li>
+                    <li>Comentarios: <br> <textarea name="comentarios" cols="37" rows="4"></textarea> </li>
+                    <li><input type="submit" id="submit"></li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__info-I">
+            <details>
+                <summary>Fuentes</summary>
+                <p>Imagenes: <a href="https://pixabay.com/" target="_blank">Pixabay</a>,
+                    Info: <a href="https://es.wikipedia.org/" target="_blank">Wikipedia</a></p>
+            </details>
+        </div>
+        <div class="footer__info-D">
+            <p>2021</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="codigo.js"></script>
+</body>
+
+</html>
