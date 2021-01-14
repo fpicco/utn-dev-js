@@ -3,8 +3,7 @@
 var nombre = prompt("Hola! Porfavor, ingresa tu nombre:");
 
 
-
- var tituloInspiracion = document.getElementsByClassName('inspiracion__section-div');
+var tituloInspiracion = document.getElementsByClassName('inspiracion__section-div');
 tituloInspiracion[0].innerHTML = "<h2 class='inspiracion__section-h2'>" + `${nombre}` + ": ¡Inspirate con nosotros!</h2>";
 
 
