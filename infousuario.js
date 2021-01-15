@@ -2,15 +2,15 @@
 
 // var nombre = prompt("Hola! Porfavor, ingresa tu nombre:");
 
-//Almacenamiento en variable el titulo de la sección "Inspiracion"
-var tituloInspiracion = document.getElementsByClassName('inspiracion__section-div');
+// //Almacenamiento en variable el titulo de la sección "Inspiracion"
+// var tituloInspiracion = document.getElementsByClassName('inspiracion__section-div');
 
-//Modificacion del contenido del HTML incluyendo los datos introducidos por el usuario
-//CHECKEAR SINTAXIS CON LA QUE ESCRIBI NOMBRE, ME PARECE QUE SIN LOS BACKTITS ANDA
-tituloInspiracion[0].innerHTML = "<h2 class='inspiracion__section-h2'>" + `${nombre}` + ": ¡Inspirate con nosotros!</h2>";
+// //Modificacion del contenido del HTML incluyendo los datos introducidos por el usuario
+// tituloInspiracion[0].innerHTML = "<h2 class='inspiracion__section-h2'>" + nombre + ": ¡Inspirate con nosotros!</h2>";
 
 //Almacenamiento en variable el titulo de la sección "Contacto"
-var tituloContacto = document.getElementsByClassName('contacto__section-div');
+// var tituloContacto = document.getElementsByClassName('contacto__section-div');
 
 //Modificacion del contenido del HTML incluyendo los datos introducidos por el usuario
-tituloContacto[0].innerHTML = "<h2 class='inspiracion__section-h2'>" + `${nombre}` + ": ¡Inspirate con nosotros!</h2>" 
+// tituloContacto[0].innerHTML = "<h2 class='contacto__section-h2'>" + nombre + ": Contactate con nosotros!</h2>" 
+
