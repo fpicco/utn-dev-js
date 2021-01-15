@@ -26,25 +26,38 @@ var contenedor = document.getElementById("inspiracion__section");
 var div = document.createElement("div");
 
 //Creación del titulo (elemento + contendido) del div:
-var h1 = document.createElement("h1");
-var h1Text = document.createTextNode("Las próximas plantas a incluir en nuestra web son: ");
-h1.appendChild(h1Text);
+// var h1 = document.createElement("h1");
+// var h1Text = document.createTextNode("Las próximas plantas a incluir en nuestra web son: ");
+// h1.appendChild(h1Text);
+
+
+
+
 
 //Creación del parrafo (elemento + contenido que incluye el ingresado por el usuario) del div:
-var p = document.createElement("p");
-// var pText = document.createTextNode(p);
+// var p = document.createElement("p");
+// var pText = document.createTextNode("PROBANDO PARRAFOS" + proxPlantas)
+// p.appendChild(pText);
 
+// lista no ordenada
+var tituloLista = document.createElement("h2");
+tituloLista.innerHTML = "Las proximas plantas incorporadas a nuestra web serán: ";
+var list = document.createElement("ul");
+for(i=0;i < proxPlantas.length; i++){
+    var li = document.createElement("li");
+    li.innerHTML = proxPlantas;
+    //NECESITO QUE ME RECORRAR EL ARRAY
+    list.appendChild(li);
+}
 
-//"<ul><li>" + proxPlantas[0] + "</li><li>" + "\n" + proxPlantas[1] + "</li><li>"  + "\n"+ proxPlantas[2] + "</li><li>"  + "\n"+ " " + " y la elegida por Usted: " + proxPlantas[3] + "</li></ul>"
+// console.dir(hul)
 
-
-
-var pText = document.createTextNode("<ul><li>" + proxPlantas[0] + "</li><li>" + "\n" + proxPlantas[1] + "</li><li>"  + "\n"+ proxPlantas[2] + "</li><li>"  + "\n"+ " " + " y la elegida por Usted: " + proxPlantas[3] + "</li></ul>");
-p.appendChild(pText);
 
 //Agregado del titulo y el parrafo al div creado
-div.appendChild(h1);
-div.appendChild(p);
+// div.appendChild(h1);
+// div.appendChild(p);
+div.appendChild(tituloLista);
+div.appendChild(list)
 
 //Adición todo al div seleccionado como contenedor
 contenedor.appendChild(div);
@@ -52,17 +65,17 @@ contenedor.appendChild(div);
 //Agregado de clases e id a los elementos
 div.classList.add("inspiracion__section-div");
 div.setAttribute("id", "div-js")
-h1.classList.add("inspiracion__section-h2");
+tituloLista.classList.add("inspiracion__section-h2");
 
 
 //Modificación del estilo de los elementos
 div.style.height = "auto";
 div.style.textTransform = "none";
-p.style.fontSize = "20px";
-p.style.color = "#ffffff";
-p.style.margin = "-10px 10px 10px 20px"
+div.style.padding = "10px"
+tituloLista.style.fontSize = "25px";
+tituloLista.style.color = "#ffffff";
+tituloLista.style.margin = "-10px 10px 10px 20px";
+list.style.marginTop = "-10px"
+list.style.color = "#ffffff"
+// list.style.listStyle = "none"
 
-
-
-
-console.dir(div)
