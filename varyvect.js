@@ -30,40 +30,17 @@ var h1 = document.createElement("h1");
 var h1Text = document.createTextNode("Las próximas plantas a incluir en nuestra web son: ");
 h1.appendChild(h1Text);
 
-
-
-
-
-
-
-
-
 //Creación del parrafo (elemento + contenido que incluye el ingresado por el usuario) del div:
 var p = document.createElement("p");
-var pText = document.createTextNode(" ");
-pText.innerHTML = "</li><li>" + "\n" + proxPlantas[1] + "</li><li>"  + "\n"+ proxPlantas[2] + "</li><li>"  + "\n"+ " " + " y la elegida por Usted: " + proxPlantas[3] + "</li></ul>"
+// var pText = document.createTextNode(p);
 
 
 //"<ul><li>" + proxPlantas[0] + "</li><li>" + "\n" + proxPlantas[1] + "</li><li>"  + "\n"+ proxPlantas[2] + "</li><li>"  + "\n"+ " " + " y la elegida por Usted: " + proxPlantas[3] + "</li></ul>"
 
 
-// var pText = document.createTextNode("<ul><li>" + proxPlantas[0] + "</li><li>" + "\n" + proxPlantas[1] + "</li><li>"  + "\n"+ proxPlantas[2] + "</li><li>"  + "\n"+ " " + " y la elegida por Usted: " + proxPlantas[3] + "</li></ul>");
 
-
-
+var pText = document.createTextNode("<ul><li>" + proxPlantas[0] + "</li><li>" + "\n" + proxPlantas[1] + "</li><li>"  + "\n"+ proxPlantas[2] + "</li><li>"  + "\n"+ " " + " y la elegida por Usted: " + proxPlantas[3] + "</li></ul>");
 p.appendChild(pText);
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Agregado del titulo y el parrafo al div creado
 div.appendChild(h1);
