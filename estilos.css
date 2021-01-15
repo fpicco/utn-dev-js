@@ -363,7 +363,8 @@
  }
  /* INSPIRACION */
  #inspiracion__section{
-     height: 1180px;
+     /* height: auto; */
+     height: 1300px;
  }
  iframe{
      height: 472.5px;
@@ -626,7 +627,8 @@
  }
  /* INSPIRACION */
  #inspiracion__section{
-     height: 850px;
+     height: auto;
+     /* height: 850px; */
  }
  iframe{
      height: 318px;

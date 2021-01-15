@@ -1,9 +1,11 @@
 //-------------- USO DE DATOS DEL USUARIO para personalizar los titulos de las secciones inspiracion y contacto
 
-var nombre = prompt("Hola! Porfavor, ingresa tu nombre:");
+// var nombre = prompt("Hola! Porfavor, ingresa tu nombre:");
 
 
 var tituloInspiracion = document.getElementsByClassName('inspiracion__section-div');
+
+//CHECKEAR SINTAXIS CON LA QUE ESCRIBI NOMBRE, ME PARECE QUE SIN LOS BACKTITS ANDA
 tituloInspiracion[0].innerHTML = "<h2 class='inspiracion__section-h2'>" + `${nombre}` + ": ¡Inspirate con nosotros!</h2>";
 
 
