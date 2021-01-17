@@ -1,17 +1,13 @@
 
 //----------------------------------PEDIDO DE INFORMACION AL USUARIO, USO DE DOM,  VECTORES Y VARIABLES
 
-//SACAR EL PROMPT!!!!!
-
 //Solicitud ingreso de información del usuario, almacenado en una VARIABLE
 
-var plantaFavUser1 = prompt("Por favor, indique una planta");
-var plantaFavUser2 = prompt("Por favor, indique otra planta");
+var plantaFavUser1 = prompt("Ayudanos a inspirarnos para sumar plantas a nuestra web! \nPor favor, sugerinos una planta");
 
 //Creación del VECTOR y agregado de la información brindada por el usuario al mismo: 
 var proxPlantas = [" Jazmín del Cabo", " Peonia", " Spathiphyllum"];
 proxPlantas.push(plantaFavUser1);
-proxPlantas.push(plantaFavUser2);
 
 
 //Selección de contenedor:
