@@ -154,7 +154,7 @@
  }
  
  .contenedor-I__imagen{
-     background:#ff7aba;
+     /* background:#ff7aba; */
      height: 418px;
      width: 440px; 
      margin-top: 10px;
@@ -221,7 +221,7 @@
  }
  
  .plantas__imagen{
-     background: #ff7aba;
+     /* background: #ff7aba; */
      height: 154px;
      width: 185px;
      margin-left: 12px;
@@ -364,7 +364,7 @@
  /* INSPIRACION */
  #inspiracion__section{
      /* height: auto; */
-     height: 1400px;
+     height: 1430px;
  }
  iframe{
      height: 472.5px;

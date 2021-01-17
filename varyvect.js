@@ -1,5 +1,5 @@
 
-//----------------------------------USO DE VECTORES Y VARIABLES
+//----------------------------------PEDIDO DE INFORMACION AL USUARIO, USO DE DOM,  VECTORES Y VARIABLES
 
 //SACAR EL PROMPT!!!!!
 
@@ -25,7 +25,7 @@ var div = document.createElement("div");
 var tituloLista = document.createElement("h2");
 tituloLista.innerHTML = "Las proximas plantas incorporadas a nuestra web serán: ";
 var subtituloLista = document.createElement("h3");
-subtituloLista.innerHTML = "(Orden segun solicitudes previas de otros usuarios)";
+subtituloLista.innerHTML = "(Orden según solicitudes previas de otros usuarios)";
 
 //Uso del bucle for para crear la lista y recorrer el vector para mostrar en pantalla sus elementos.
 var list = document.createElement("ol");
@@ -63,5 +63,4 @@ subtituloLista.style.marginTop = "-20px";
 subtituloLista.style.marginBottom = "10px";
 list.style.marginTop = "-10px";
 list.style.color = "#ffffff";
-// list.style.listStyle = "none"
 
