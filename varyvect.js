@@ -17,7 +17,7 @@ var contenedor = document.getElementById("inspiracion__section");
 var div = document.createElement("div");
 
 
-// Creación de lista ordenada + titulo y subtitulo
+// Creación de titulo y subtitulo de la lista 
 var tituloLista = document.createElement("h2");
 tituloLista.innerHTML = "Las proximas plantas incorporadas a nuestra web serán: ";
 var subtituloLista = document.createElement("h3");
