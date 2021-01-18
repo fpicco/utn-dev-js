@@ -55,5 +55,9 @@ contenedorMas[0].style.backgroundColor = "#4f0099";
 var footer = document.getElementsByTagName("footer");
 footer[0].style.backgroundColor = "#039";
 
+var navResponsive = document.getElementsByClassName("nav__li");
+for (var i = 0; i < navResponsive.length; ++i) 
+    navResponsive[i].style.backgroundColor = "#6b0034";
+
     
 }

@@ -627,7 +627,7 @@
  }
  /* INSPIRACION */
  #inspiracion__section{
-     height: auto;
+     height: 1150px;
      /* height: 850px; */
  }
  iframe{
@@ -733,7 +733,7 @@
   /* Barra de navegación */
   
   .nav__ul{
-      background-color:#fffacd;
+      background-color: transparent;
       padding: 0;
       margin-left: 0;
       float: none;
@@ -879,7 +879,7 @@
  
   /* INSPIRACION */
   #inspiracion__section{
-      height: auto;
+      height: 1000px;
   }
   iframe{
       height: auto;
