@@ -4,7 +4,7 @@
 //Peticion de información al usuario y almacenamiento en variable
 var coloresUsuario = prompt("Como prefiere ver la página? Escriba \"light\" o \"dark\" según sus preferencias");
 
-//Transformacion del ingreso de informacion del usuario a minusculas
+//Transformacion del ingreso de información del usuario a minusculas
 coloresUsuario = coloresUsuario.toLowerCase();
 
 //Uso de un condicional para establecer el modo oscuro

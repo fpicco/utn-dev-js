@@ -1,4 +1,4 @@
-//-------------- USO DE DATOS DEL USUARIO para personalizar el titulo de la seccion contacto
+//-------------- USO DE DATOS DEL USUARIO para personalizar el título de la seccion contacto
 
 var nombre = prompt("Hola! Porfavor, ingresa tu nombre:");
 

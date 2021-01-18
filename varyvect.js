@@ -31,13 +31,12 @@ for(var i=0;i < proxPlantas.length; i++){
     list.appendChild(li);
 }
 
-
-//Agregado del titulo y la lista al div creado
+//Agregado del titulo, subtitulo y la lista al div creado
 div.appendChild(tituloLista);
 div.appendChild(subtituloLista);
 div.appendChild(list);
 
-//Adición todo al div seleccionado como contenedor
+//Adición de todo al div seleccionado como contenedor
 contenedor.appendChild(div);
 
 //Agregado de clases e id a los elementos
