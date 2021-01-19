@@ -1,14 +1,11 @@
 // --------------USO DE INFORMACION DEL USUARIO, DOM y CONDICIONAL para crear el darkmode
 
 
-//Peticion de información al usuario y almacenamiento en variable
-var coloresUsuario = prompt("Como prefiere ver la página? Escriba \"light\" o \"dark\" según sus preferencias");
-
-//Transformacion del ingreso de información del usuario a minusculas
-coloresUsuario = coloresUsuario.toLowerCase();
+//Confirmación al usuario para darkmode y almacenamiento en variable
+var darkMode = confirm("NUEVA VERSION DARKMODE \nPresione aceptar para ver nuestra web en darkmode o cancelar para ver la versión clásica.");
 
 //Uso de un condicional para establecer el modo oscuro
-if (coloresUsuario == "dark"){
+if (darkMode){
 
 //obtencion de elementos a través del DOM y cambio del color de fondo
 var body = document.getElementsByTagName("body");
