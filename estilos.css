@@ -406,11 +406,11 @@
  }
  .contacto__formulario{
      float: left;
-     margin-left: -15px;
+     margin-left: 15px;
+     margin-top: 5px;
  }
- form ul li{
+ label{
      font-size: 25px;
-     list-style: none;
  }
  input, textarea, select{
      display: block;
@@ -425,9 +425,10 @@
  }
  textarea{
      margin-top: 7px;
+     resize: none;
  }
  select{
-     font-size: 20px;
+     font-size: 15px;
  }
  #submit{
      height: 30px;
@@ -649,7 +650,8 @@
      display: none;
  }
  .contacto__formulario{
-     margin: auto;
+     /* background-color: red; */
+     margin: 0 45px ;
  }
  input, textarea, select{
      width: 450px;

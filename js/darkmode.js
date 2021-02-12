@@ -1,7 +1,7 @@
 // --------------USO DE INFORMACION DEL USUARIO, DOM y CONDICIONAL para crear el darkmode
 
 
-//Confirmación al usuario para darkmode y almacenamiento en variable
+//Confirmación del usuario para darkmode y almacenamiento en variable
 var darkMode = confirm("NUEVA VERSION DARKMODE \nPresione aceptar para ver nuestra web en darkmode o cancelar para ver la versión clásica.");
 
 //Uso de un condicional para establecer el modo oscuro
