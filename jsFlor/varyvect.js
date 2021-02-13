@@ -50,6 +50,7 @@ subtituloLista.classList.add("inspiracion__section-h2");
 div.style.height = "auto";
 div.style.textTransform = "none";
 div.style.padding = "10px";
+div.style.marginTop = "-260px"
 tituloLista.style.fontSize = "25px";
 tituloLista.style.color = "#ffffff";
 tituloLista.style.margin = "-10px 10px 10px 20px";

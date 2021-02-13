@@ -1,968 +1,1033 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
- }
- header, section, footer{
-     width: 960px;
-     margin: auto;
- }
- a{
-     text-decoration: none;
- }
- a:hover{
-     cursor: pointer;
- }
- h1, h2, h3{
-     font-weight: 200;
-     margin: 0;
- }
- h1, h2 {
-     font-size: 28px;
- }
- h3{
-     font-size: 24px;
- }
- h4{
-     font-weight: 200;
- }
- body{
-     background-color: #fffacd;
- }
- 
- /* HEADER */
- header{
-     height: 220px;
-     margin: auto;
-     position: relative;
- }
- .header-content{
-     position: absolute;
-     top: 60px;
- }
- .header-content__nav, .header-content__redes{
-     height: 70px;
-     width: 960px;
-     margin-top: 7px; 
-     box-shadow: 2px 2px 4px #262626;
- }
- #logo{
-     background-color: #fff;
-     height: 210px;
-     width: 210px;
-     position: absolute; 
-     top: 10px;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     margin: auto; 
-     border: 10px solid #fff;
-     border-radius: 50%;
-     box-shadow: 0 0 7px #262626;
- }
- /* Barra de navegación */
- #nav{
-     background:#ff7aba;
-     border-radius: 9px;
- }
- .nav__ul{
-     margin-left: -30px;
-     float: left;
-     margin-top: 0;
- }
- .redes__ul{
-     float: right;
-     margin-top: 0;
- }
- .nav__li, .redes__li{
-     display: inline;
- }
- .nav__li{
-     float: left;
- }
- .redes__ul a, .redes__ul-responsive a{
-     text-decoration: none;
-     color: #fff;
-     float: right;
-     margin-right: 13px;
-     margin-top: 17px;
-     font-size: 2.5em;
-     border: solid transparent;
-     border-width: 0 2px;
- }
- .redes__ul a:hover, .redes__ul-responsive a:hover{
-     border: 2px solid transparent;
- }
- .nav__ul a{
-     display: inline-block;
-     height: 69px;
-     text-decoration: none;
-     color: #fff;
-     font-size: 1.7em;
-     text-align: center;
-     line-height: 2.7;
-     padding-left: 8px;
-     padding-right: 8px; 
-     border-radius: 7px;
- }
- .nav__ul a:hover{
-     color:#ff7aba;
-     background-color: rgba(255, 255, 255, 0.9);
- }
- 
- 
- /* frase */
- #frase{
-     background: #69f;
-     border-radius: 9px;
-     color: #fff;
-     font-size: 1.075em;
-     line-height: 3;
-     font-style: italic;
-     margin-top: -6px;
- }
- #span__mariposa{
-     float: left;
-     padding-left: 7px;
-     margin-top: 3px;
- }
- #span__vengan{
-     float: right;
-     margin-top: 20px;
-     padding-right: 13px;
- }
- .redes__ul-responsive{
-     display: none;
- }
- 
- /* SECTION */
- section{
-     background: #fffacd;
-     height: 1140px;
- }
- /* contenedor izquierda */
- .contenedor-I{
-     height: 1130px;
-     width: 480px;
-     float: left;
-     padding: 20px;
- }
- .contenedor-I__titulo{
-     background:#bf7aff;
-     height: 43px;
-     width: 440px;
-     box-shadow: 2px 2px 4px #262626;
- }
- 
- .contenedor-I__imagen{
-     /* background:#ff7aba; */
-     height: 418px;
-     width: 440px; 
-     margin-top: 10px;
-     border-radius: 7px;
-     object-fit: cover;
-     box-shadow: 2px 2px 4px #262626;
- }
- .contenedor-I__desc{
-     background: #69f;
-     height: 555px;
-     width: 440px;
-     margin-top: 10px;
-     overflow: auto;
-     padding: 20px 20px 0;
-     text-align: center;
-     font-size: 24px;
-     color: #fff;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
- }
- .articulo__titulo {
-     display: inline;
- }
- .articulo_parrafo1{
-     display: inline;
- }
- .contenedor-I__pie{
-     background: #bf7aff;
-     height: 43px;
-     width: 440px;
-     margin-top: 10px;
-     box-shadow: 2px 2px 4px #262626;
- }
- 
- 
- /* contenedor derecha */
- .contenedor-D{
-     height: 1130px;
-     width: 480px;
-     float: right;
-     padding: 10px;
-     position: relative;
- }
- .contenedor-D__titulo{
-     background: #bf7aff;
-     height: 43px;
-     width: 438px;
-     margin: 10px 12px 5px 11px;
-     position: relative;
-     box-shadow: 2px 2px 4px #262626;
- }
- .contenedor-D__plantas{
-     height: 230px;
-     width: 210px;
-     background: #bf7aff;
-     position: relative;
-     float: left;
-     margin: 10px;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
- }
- .plantas__figure{
-     margin: 0;
- }
- 
- .plantas__imagen{
-     /* background: #ff7aba; */
-     height: 154px;
-     width: 185px;
-     margin-left: 12px;
-     position: relative;
-     margin-top: 10px;
-     object-fit: cover;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
- }
- .plantas__imagen:hover{
-     box-shadow: 0 0 10px #fff;
-     cursor: pointer;   
- }
- 
- .plantas__descripcion{
-     background:#ff7aba;
-     height: 44px;
-     width: 185px;
-     margin-left: 12px;
-     margin-top: 4px;
-     top: 1px;
-     bottom: 12px;
-     position: relative;
-     text-align: center;
-     line-height: 1.8;
-     color: rgba(255, 255, 255, 0.7);
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
- }  
- .plantas__descripcion:hover{
-     color: white;
-     box-shadow: 0 0 10px #fff;
-     cursor: pointer;
- }
- 
- #jazmin_de_leche_h3{
-     line-height: 2;
-     font-size: 22px;
- }
- .contenedor-D__mas{
-     background: #bf7aff;
-     height: 43px;
-     width: 438px;
-     margin-top: 10px;
-     margin-left: 12px;
-     position: absolute;
-     bottom: 15px; 
-     box-shadow: 2px 2px 4px #262626;
- }
- .contenedor-D__mas a{
-     display: block;
-     color: #fff;
-     width: 438px;
- }
- 
- .contenedor-D__mas a:hover{
-     color: #fff;
-     box-shadow: 0 0 10px #fff;
- }
- 
- /* divs violetas */
- .contenedor-I__titulo, .contenedor-I__pie, .contenedor-D__titulo, .contenedor-D__mas{
-     font-size: 1.7em;
-     text-align: center;
-     line-height: 1.8;
-     color: #fff;
-     border-radius: 7px;
- }
- 
- .contenedor-D__mas:hover{
-     color: white;
-     box-shadow: 0 0 10px #fff;
-     cursor: pointer;
- }
- /* FOOTER */
- footer{
-     background-color: #69f;
-     height: 63px;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
- }
- .footer__info-I{
-     background:transparent;
-     height: 40px;
-     width: 200px;
-     position: relative;
-     float: left;
-     top: 12px;
-     left: 4px;
-     font-size: 1.2em;
-     padding: 6px;
-     color: white;
- }
- details p{
-     width: 400px;
-     margin-top: 0;
- }
- .footer__info-I a{
-     text-decoration: none;
-     color: white;
-     background-color: #ff7aba;
-     border-radius: 7px;
-     padding: 2px 3px;
- }
- .footer__info-I a:hover{
-     background-color: #fff;
-     color: #ff7aba;
- }
- .footer__info-D{
-     height: 40px;
-     width: 200px;
-     float: right;
-     text-align: right;
-     font-size: 1.5em;
-     padding-right: 10px;
-     color: #fff; 
- }
- 
- 
- /* -------- OTRAS SECCIONES -------- */
- #contacto__section, #inspiracion__section{
-     margin-top: -15px;
- }
- .inspiracion__section-div, .contacto__section-div, .vermas__fotos-div{
-     background: #bf7aff;
-     height: 53px;
-     width: 840px;
-     position: relative;
-     top: 40px;
-     margin: auto;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
-     text-transform: capitalize;
- }
- .inspiracion__section-h2, .contacto__section-h2, .vermas__fotos-h2{
-     color: #fff;
-     text-align: center;
-     line-height: 2em;
- }
- /* INSPIRACION */
- #inspiracion__section{
-     /* height: auto; */
-     height: 1430px;
- }
- iframe{
-     height: 472.5px;
-     width: 840px;
-     margin: 60px 60px 0;
-     border: 7px solid #bf7aff;
-     border-radius: 7px;
- }
- #ideas{
-     margin-top: -25px;
- }
- 
- /* CONTACTO */
- #contacto__section{
-     height: 630px;
- }
- 
- .contacto__container{
-     color: #fff;
-     background-color:#ff7aba;
-     width: 840px;
-     height: 480px;
-     margin: 60px;
-     border-radius: 20px;
-     padding: 5px 0;
-     box-shadow: 2px 2px 4px #262626;
- }
- .contacto__foto{
-     float: left;
-     background-color:#bf7aff;
-     height: 430px;
-     width: 480px;
-     border-radius: 7px;
-     position: relative;
-     object-fit: cover;    
-     box-shadow: 2px 2px 4px #262626;
-     border: 7px solid #bf7aff;
-     margin-left: -15px;
- }
- .contacto__formulario{
-     float: left;
-     margin-left: 15px;
-     margin-top: 5px;
- }
- label{
-     font-size: 25px;
- }
- input, textarea, select{
-     display: block;
-     background:rgba(255, 255, 255, 0.9);
-     border-radius: 7px;
-     caret-color:#bf7aff;
-     width: 285px;
-     margin: 3px 0;
- }
- input, select{
-     height: 28px;
- }
- textarea{
-     margin-top: 7px;
-     resize: none;
- }
- select{
-     font-size: 15px;
- }
- #submit{
-     height: 30px;
-     width: 100px;
-     height: 40px;
-     color: #fff;
-     font-size: 28px;
-     background: #bf7aff;
-     border-radius: 5px;
-     margin-top: 10px;
-     margin-right: 5px;
-     float: right;
- }
- #submit:hover{
-     color: #bf7aff;
-     background: #fff;
-     cursor: pointer;
-     box-shadow: 0 0 10px #fff;
- }
- /* FOTOS */
- #vermas__fotos{
-     height: 850px;
- }
- .vermas__fotos-menu{
-     margin-top: 40px;
-     margin-left: 9px;
-     position: relative;
-     float: left;
- }
- .vermas__fotos-ul{
-     list-style: none;
-     font-size: 26px;
-     padding: 3px;
-     width: 250px;
- }
- .vermas__fotos-a{
-     display: block;
-     background: #bf7aff;
-     color: #fff;
-     border-radius: 7px;
-     margin: 3px;
-     padding: 6px 8px;
-     transition: all 0.3s ease-out;
-     box-shadow: 2px 2px 4px #262626;
- 
- }
- .vermas__fotos-a:hover{
-     background:#ff7aba;
-     width: 255px;
-     padding: 6px 20px;
- }
- .vermas__figure{
-     margin: 0;
-     display: inline;
- }
- .vermas__ocultar{
-     display: none;
- }
- .vermas__contenedor1{
-     float: right;
-     margin-top: 70px;
-     position: relative;
- }
- .vermas__contenedor1-imagenes{
-     background-color:#ff7aba;
-     width: 315px;
-     height: 365px;
-     margin: 0 15px;
-     float: right;
-     border: 8px solid #ff7aba;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
-     object-fit: cover;
- }
- .vermas__contenedor2{
-     float: right;
-     position: relative;
-     top: 0;
- }
- .vermas__contenedor2-imagenes{
-     background-color: #ff7aba;
-     width: 300px;
-     height: 300px;
-     margin: 0 10px;
-     float: left;
-     border: 8px solid #ff7aba;
-     border-radius: 7px;
-     box-shadow: 2px 2px 4px #262626;
-     object-fit: cover;
- }
- 
- #vermas__fotos-seleccionado{
-     color:  #fff;
-     background: #ff7aba;
- }
- 
- 
- /* **************************** RESPONSIVE TABLET **************************** */
- @media all and (min-width: 600px) and (max-width: 1023px){
- 
- header, section, footer{
-     width: 580px;
- }
- 
- /* *********************** HEADER *********************** */
- 
- .header-content__nav, .header-content__redes{
-     width: 580px;
- }
- #logo{
-     margin: 10px 0 0 5px;
-     z-index: 1000;
- }
- 
- /* Barra de navegación */
- 
- .nav__ul{
-     margin-right: 3px;
-     float: right;
- }
- /* frase */
- 
- #span__mariposa, #span__vengan{
-     display: none;
- }
- .redes__ul-responsive{
-     display: inline-block;
-     /*float: right;*/
-     font-size: 15px;
-     margin: 0;
- }
- .redes__ul-responsive li{
-     line-height: normal;
- }
- 
- /************************ SECTION ************************/
- section{
-     background-color: transparent;
-     height: auto;
-     position: relative;
-     overflow: hidden;
- }
- /* contenedor izquierda */
- .contenedor-I{
-     height: auto;
-     width: 580px;
- }
- .contenedor-I__titulo, .contenedor-I__imagen, .contenedor-I__pie, .contenedor-I__desc{
-     width: 540px; 
- }
- .contenedor-I__desc{
-     height: auto;
- }
- 
- /* contenedor derecha */
- .contenedor-D{
-     height: auto;
-     width: 580px;
- }
- .contenedor-D__titulo{
-     margin-top: -10px;
- }
- .contenedor-D__titulo, .contenedor-D__mas{
-     width: 540px;
- }
- .contenedor-D__plantas{
-     height: 278px;
-     width: 260px;
-     position: relative;
- }
- .plantas__imagen, .plantas__descripcion{
-     width: 238px;
- }
- .plantas__imagen{
-     height: 194px;
- }
- .plantas__descripcion{
-     height: 50px;
- }  
- .contenedor-D__mas{
-     position: relative;
-     top: 15px;
-     margin-bottom: 25px;
-     overflow: hidden;
- }
- .contenedor-D__mas a{
-     width: 540px;
- }
- 
- /* divs violetas */
- 
- /* FOOTER */
- 
- /* -------- OTRAS SECCIONES -------- */
- .inspiracion__section-div, .contacto__section-div, .vermas__fotos-div{
-     width: 540px;
- }
- /* INSPIRACION */
- #inspiracion__section{
-     height: 1150px;
-     /* height: 850px; */
- }
- iframe{
-     height: 318px;
-     width: 540px;
-     margin: 50px 20px 2px;
- }
- /* CONTACTO */
- #contacto__section{
-     height: 600px;
- }
- 
- .contacto__container{
-     width: 540px;
-     height: 455px;
-     margin: 60px auto;
- }
- .contacto__foto{
-     display: none;
- }
- .contacto__formulario{
-     /* background-color: red; */
-     margin: 0 45px ;
- }
- input, textarea, select{
-     width: 450px;
- }
- /* ******************** FOTOS ******************** */
- #vermas__fotos{
-     height: auto;
- }
- .vermas__fotos-div{
-     margin-top: -15px;
-     margin-bottom: 15px;
- }
- .vermas__fotos-menu{
-     margin-top: 50px;
-     margin-left: 0;
-     float: none;
- }
- .vermas__fotos-ul{
-     display: inline;
- }
- .vermas__fotos-ul li{
-     display: inline-block;
-     width: 284px;
- }
- .vermas__fotos-a{
-     margin: 1px;
- }
- .vermas__fotos-a:hover{
-     width: 284px;
-     padding: 6px 30px;
- }
- .vermas__fotos-ul li:first-child{
-     margin-left: -2px;
- }
- .vermas__contenedor1{
-     display: none;
- }
- .vermas__contenedor2{
-     width: 580px;
-     float: none;
-     margin-top: 10px;
- }
- .vermas__contenedor2-imagenes{
-     width: 100%;
-     height: auto;
-     margin: 10px 0;
-     float: none;
- }
- 
- }
- 
- 
- /* **************************** RESPONSIVE CELU **************************** */
- @media all and (max-width: 599px){
-    
-  header, section, footer{
-      width: 90%;
- }
- h1, h2, h3{
-     font-size: 24px;
- }
-  /* HEADER */
-     header{
-     height: 180px;
-     top: 0;
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+header,
+section,
+footer {
+  width: 960px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  font-weight: 200;
+  margin: 0;
+}
+h1,
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-weight: 200;
+}
+body {
+  background-color: #fffacd;
+}
+
+/* HEADER */
+header {
+  height: 220px;
+  margin: auto;
+  position: relative;
+}
+.header-content {
+  position: absolute;
+  top: 60px;
+}
+.header-content__nav,
+.header-content__redes {
+  height: 70px;
+  width: 960px;
+  margin-top: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+#logo {
+  background-color: #fff;
+  height: 210px;
+  width: 210px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 7px #262626;
+}
+/* Barra de navegación */
+#nav {
+  background: #ff7aba;
+  border-radius: 9px;
+}
+.nav__ul {
+  margin-left: -30px;
+  float: left;
+  margin-top: 0;
+}
+.redes__ul {
+  float: right;
+  margin-top: 0;
+}
+.nav__li,
+.redes__li {
+  display: inline;
+}
+.nav__li {
+  float: left;
+}
+.redes__ul a,
+.redes__ul-responsive a {
+  text-decoration: none;
+  color: #fff;
+  float: right;
+  margin-right: 13px;
+  margin-top: 17px;
+  font-size: 2.5em;
+  border: solid transparent;
+  border-width: 0 2px;
+}
+.redes__ul a:hover,
+.redes__ul-responsive a:hover {
+  border: 2px solid transparent;
+}
+.nav__ul a {
+  display: inline-block;
+  height: 69px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 2.7;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 7px;
+}
+.nav__ul a:hover {
+  color: #ff7aba;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* frase */
+#frase {
+  background: #69f;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 1.075em;
+  line-height: 3;
+  font-style: italic;
+  margin-top: -6px;
+}
+#span__mariposa {
+  float: left;
+  padding-left: 7px;
+  margin-top: 3px;
+}
+#span__vengan {
+  float: right;
+  margin-top: 20px;
+  padding-right: 13px;
+}
+.redes__ul-responsive {
+  display: none;
+}
+
+/* SECTION */
+section {
+  background: #fffacd;
+  height: 1140px;
+}
+/* contenedor izquierda */
+.contenedor-I {
+  height: 1130px;
+  width: 480px;
+  float: left;
+  padding: 20px;
+}
+.contenedor-I__titulo {
+  background: #bf7aff;
+  height: 43px;
+  width: 440px;
+  box-shadow: 2px 2px 4px #262626;
+}
+
+.contenedor-I__imagen {
+  /* background:#ff7aba; */
+  height: 418px;
+  width: 440px;
+  margin-top: 10px;
+  border-radius: 7px;
+  object-fit: cover;
+  box-shadow: 2px 2px 4px #262626;
+}
+.contenedor-I__desc {
+  background: #69f;
+  height: 555px;
+  width: 440px;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 20px 20px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.articulo__titulo {
+  display: inline;
+}
+.articulo_parrafo1 {
+  display: inline;
+}
+.contenedor-I__pie {
+  background: #bf7aff;
+  height: 43px;
+  width: 440px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 4px #262626;
+}
+
+/* contenedor derecha */
+.contenedor-D {
+  height: 1130px;
+  width: 480px;
+  float: right;
+  padding: 10px;
+  position: relative;
+}
+.contenedor-D__titulo {
+  background: #bf7aff;
+  height: 43px;
+  width: 438px;
+  margin: 10px 12px 5px 11px;
+  position: relative;
+  box-shadow: 2px 2px 4px #262626;
+}
+.contenedor-D__plantas {
+  height: 230px;
+  width: 210px;
+  background: #bf7aff;
+  position: relative;
+  float: left;
+  margin: 10px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.plantas__figure {
+  margin: 0;
+}
+
+.plantas__imagen {
+  /* background: #ff7aba; */
+  height: 154px;
+  width: 185px;
+  margin-left: 12px;
+  position: relative;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.plantas__imagen:hover {
+  box-shadow: 0 0 10px #fff;
+  cursor: pointer;
+}
+
+.plantas__descripcion {
+  background: #ff7aba;
+  height: 44px;
+  width: 185px;
+  margin-left: 12px;
+  margin-top: 4px;
+  top: 1px;
+  bottom: 12px;
+  position: relative;
+  text-align: center;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.plantas__descripcion:hover {
+  color: white;
+  box-shadow: 0 0 10px #fff;
+  cursor: pointer;
+}
+
+#jazmin_de_leche_h3 {
+  line-height: 2;
+  font-size: 22px;
+}
+.contenedor-D__mas {
+  background: #bf7aff;
+  height: 43px;
+  width: 438px;
+  margin-top: 10px;
+  margin-left: 12px;
+  position: absolute;
+  bottom: 15px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.contenedor-D__mas a {
+  display: block;
+  color: #fff;
+  width: 438px;
+}
+
+.contenedor-D__mas a:hover {
+  color: #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* divs violetas */
+.contenedor-I__titulo,
+.contenedor-I__pie,
+.contenedor-D__titulo,
+.contenedor-D__mas {
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 1.8;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.contenedor-D__mas:hover {
+  color: white;
+  box-shadow: 0 0 10px #fff;
+  cursor: pointer;
+}
+/* FOOTER */
+footer {
+  background-color: #69f;
+  height: 63px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.footer__info-I {
+  background: transparent;
+  height: 40px;
+  width: 200px;
+  position: relative;
+  float: left;
+  top: 12px;
+  left: 4px;
+  font-size: 1.2em;
+  padding: 6px;
+  color: white;
+}
+details p {
+  width: 400px;
+  margin-top: 0;
+}
+.footer__info-I a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff7aba;
+  border-radius: 7px;
+  padding: 2px 3px;
+}
+.footer__info-I a:hover {
+  background-color: #fff;
+  color: #ff7aba;
+}
+.footer__info-D {
+  height: 40px;
+  width: 200px;
+  float: right;
+  text-align: right;
+  font-size: 1.5em;
+  padding-right: 10px;
+  color: #fff;
+}
+
+/* -------- OTRAS SECCIONES -------- */
+#contacto__section,
+#inspiracion__section {
+  margin-top: -15px;
+}
+.inspiracion__section-div,
+.contacto__section-div,
+.vermas__fotos-div,
+.jardines__section-div {
+  background: #bf7aff;
+  height: 53px;
+  width: 840px;
+  position: relative;
+  top: 40px;
+  margin: auto;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+  text-transform: capitalize;
+}
+.inspiracion__section-h2,
+.contacto__section-h2,
+.vermas__fotos-h2,
+.jardines__section-h2 {
+  color: #fff;
+  text-align: center;
+  line-height: 2em;
+}
+.jardines__section-h2{
+    margin-bottom: 20px;
+}
+/* INSPIRACION */
+#inspiracion__section {
+  /* height: auto; */
+  height: 2100px;
+}
+iframe {
+  height: 472.5px;
+  width: 840px;
+  margin: 60px 60px 0;
+  border: 7px solid #bf7aff;
+  border-radius: 7px;
+}
+#ideas {
+  margin-top: -25px;
+}
+
+.jardines-img {
+  height: 250px;
+  width: 260px;
+  margin-left: 12px;
+  position: relative;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+.jardines-img:hover{
+    transform: scale(1.05);
+}
+.jardines__section-div{
+margin-top: 180px;
+}
+/* CONTACTO */
+#contacto__section {
+  height: 630px;
+}
+
+.contacto__container {
+  color: #fff;
+  background-color: #ff7aba;
+  width: 840px;
+  height: 480px;
+  margin: 60px;
+  border-radius: 20px;
+  padding: 5px 0;
+  box-shadow: 2px 2px 4px #262626;
+}
+.contacto__foto {
+  float: left;
+  background-color: #bf7aff;
+  height: 430px;
+  width: 480px;
+  border-radius: 7px;
+  position: relative;
+  object-fit: cover;
+  box-shadow: 2px 2px 4px #262626;
+  border: 7px solid #bf7aff;
+  margin-left: -15px;
+}
+.contacto__formulario {
+  float: left;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+label {
+  font-size: 25px;
+}
+input,
+textarea,
+select {
+  display: block;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  caret-color: #bf7aff;
+  width: 285px;
+  margin: 3px 0;
+}
+input,
+select {
+  height: 28px;
+}
+textarea {
+  margin-top: 7px;
+  resize: none;
+}
+select {
+  font-size: 15px;
+}
+#submit {
+  height: 30px;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  font-size: 28px;
+  background: #bf7aff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+  float: right;
+}
+#submit:hover {
+  color: #bf7aff;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fff;
+}
+/* FOTOS */
+#vermas__fotos {
+  height: 850px;
+}
+.vermas__fotos-menu {
+  margin-top: 40px;
+  margin-left: 9px;
+  position: relative;
+  float: left;
+}
+.vermas__fotos-ul {
+  list-style: none;
+  font-size: 26px;
+  padding: 3px;
+  width: 250px;
+}
+.vermas__fotos-a {
+  display: block;
+  background: #bf7aff;
+  color: #fff;
+  border-radius: 7px;
+  margin: 3px;
+  padding: 6px 8px;
+  transition: all 0.3s ease-out;
+  box-shadow: 2px 2px 4px #262626;
+}
+.vermas__fotos-a:hover {
+  background: #ff7aba;
+  width: 255px;
+  padding: 6px 20px;
+}
+.vermas__figure {
+  margin: 0;
+  display: inline;
+}
+.vermas__ocultar {
+  display: none;
+}
+.vermas__contenedor1 {
+  float: right;
+  margin-top: 70px;
+  position: relative;
+}
+.vermas__contenedor1-imagenes {
+  background-color: #ff7aba;
+  width: 315px;
+  height: 365px;
+  margin: 0 15px;
+  float: right;
+  border: 8px solid #ff7aba;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+  object-fit: cover;
+}
+.vermas__contenedor2 {
+  float: right;
+  position: relative;
+  top: 0;
+}
+.vermas__contenedor2-imagenes {
+  background-color: #ff7aba;
+  width: 300px;
+  height: 300px;
+  margin: 0 10px;
+  float: left;
+  border: 8px solid #ff7aba;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+  object-fit: cover;
+}
+
+#vermas__fotos-seleccionado {
+  color: #fff;
+  background: #ff7aba;
+}
+
+/* **************************** RESPONSIVE TABLET **************************** */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  header,
+  section,
+  footer {
+    width: 580px;
   }
-  .header-content{
-      width: 100%;
+
+  /* *********************** HEADER *********************** */
+
+  .header-content__nav,
+  .header-content__redes {
+    width: 580px;
   }
-  .header-content__nav, .header-content__redes{
-      height: auto;
-      width: 100%;
-      margin-right: 0;
-      box-shadow: none;
+  #logo {
+    margin: 10px 0 0 5px;
+    z-index: 1000;
   }
-  #logo{
-      height: auto;
-      width: 30%;
-      margin: 0;
- }
+
   /* Barra de navegación */
-  
-  .nav__ul{
-      background-color: transparent;
-      padding: 0;
-      margin-left: 0;
-      float: none;
-      text-align: center;
-      margin-top: -25px;
-  }
- .redes__ul{
-      display: none;
-  }
- .nav__li{
-     background-color: #ff7aba;
-     display: block;
-     float: none;
-     width: 100%;
-     border-radius: 7px;
-     margin: 3px;
-     box-shadow: 2px 0 4px #262626;
-  }
-  .nav__ul a:hover{
-     width: 100%;
- }
- .redes__ul-responsive{
-     width: 80%;
-     height: auto;
-     margin: auto;
-     display: inline-block;
- }
-  .redes__ul a, .redes__ul-responsive a{
-      font-size: 28px;
-      margin: 7px 12px;
-      height: auto;
-      line-height: normal;
-  }
-  .nav__ul a{
-     font-size: 23px;
-     height: auto;
-     line-height: normal;
+
+  .nav__ul {
+    margin-right: 3px;
+    float: right;
   }
   /* frase */
-  #frase{
-     height: 40px;
-     line-height: normal;
-     width: 100%;
-     margin-top: -18px;
-     box-shadow: 2px 2px 4px #262626;
-     margin-left: 2px;
+
+  #span__mariposa,
+  #span__vengan {
+    display: none;
   }
-  #span__mariposa, #span__vengan{
-      display: none;
+  .redes__ul-responsive {
+    display: inline-block;
+    /*float: right;*/
+    font-size: 15px;
+    margin: 0;
   }
-  
-  
-  /* SECTION */
-  section{ 
-     height: auto;
-     position: static;
-     overflow: hidden;
-     }
- 
+  .redes__ul-responsive li {
+    line-height: normal;
+  }
+
+  /************************ SECTION ************************/
+  section {
+    background-color: transparent;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
   /* contenedor izquierda */
-  .contenedor-I{
-      height: auto;
-      width: 100%;
-      float: none;
+  .contenedor-I {
+    height: auto;
+    width: 580px;
   }
-  .contenedor-I__titulo, .contenedor-I__imagen, .contenedor-I__desc,  .articulo__titulo, .contenedor-I__pie{
-      height: auto;
-      width: 100%;
+  .contenedor-I__titulo,
+  .contenedor-I__imagen,
+  .contenedor-I__pie,
+  .contenedor-I__desc {
+    width: 540px;
   }
-  .contenedor-I__desc{
-      font-size: 15px;
+  .contenedor-I__desc {
+    height: auto;
+  }
+
+  /* contenedor derecha */
+  .contenedor-D {
+    height: auto;
+    width: 580px;
+  }
+  .contenedor-D__titulo {
+    margin-top: -10px;
+  }
+  .contenedor-D__titulo,
+  .contenedor-D__mas {
+    width: 540px;
+  }
+  .contenedor-D__plantas {
+    height: 278px;
+    width: 260px;
+    position: relative;
+  }
+  .plantas__imagen,
+  .plantas__descripcion {
+    width: 238px;
+  }
+  .plantas__imagen {
+    height: 194px;
+  }
+  .plantas__descripcion {
+    height: 50px;
+  }
+  .contenedor-D__mas {
+    position: relative;
+    top: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+  .contenedor-D__mas a {
+    width: 540px;
+  }
+
+  /* divs violetas */
+
+  /* FOOTER */
+
+  /* -------- OTRAS SECCIONES -------- */
+  .inspiracion__section-div,
+  .contacto__section-div,
+  .vermas__fotos-div {
+    width: 540px;
+  }
+  /* INSPIRACION */
+  #inspiracion__section {
+    height: 1150px;
+    /* height: 850px; */
+  }
+  iframe {
+    height: 318px;
+    width: 540px;
+    margin: 50px 20px 2px;
+  }
+  /* CONTACTO */
+  #contacto__section {
+    height: 600px;
+  }
+
+  .contacto__container {
+    width: 540px;
+    height: 455px;
+    margin: 60px auto;
+  }
+  .contacto__foto {
+    display: none;
+  }
+  .contacto__formulario {
+    /* background-color: red; */
+    margin: 0 45px;
+  }
+  input,
+  textarea,
+  select {
+    width: 450px;
+  }
+  /* ******************** FOTOS ******************** */
+  #vermas__fotos {
+    height: auto;
+  }
+  .vermas__fotos-div {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  .vermas__fotos-menu {
+    margin-top: 50px;
+    margin-left: 0;
+    float: none;
+  }
+  .vermas__fotos-ul {
+    display: inline;
+  }
+  .vermas__fotos-ul li {
+    display: inline-block;
+    width: 284px;
+  }
+  .vermas__fotos-a {
+    margin: 1px;
+  }
+  .vermas__fotos-a:hover {
+    width: 284px;
+    padding: 6px 30px;
+  }
+  .vermas__fotos-ul li:first-child {
+    margin-left: -2px;
+  }
+  .vermas__contenedor1 {
+    display: none;
+  }
+  .vermas__contenedor2 {
+    width: 580px;
+    float: none;
+    margin-top: 10px;
+  }
+  .vermas__contenedor2-imagenes {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    float: none;
+  }
+}
+
+/* **************************** RESPONSIVE CELU **************************** */
+@media all and (max-width: 599px) {
+  header,
+  section,
+  footer {
+    width: 90%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+  /* HEADER */
+  header {
+    height: 180px;
+    top: 0;
+  }
+  .header-content {
+    width: 100%;
+  }
+  .header-content__nav,
+  .header-content__redes {
+    height: auto;
+    width: 100%;
+    margin-right: 0;
+    box-shadow: none;
+  }
+  #logo {
+    height: auto;
+    width: 30%;
+    margin: 0;
+  }
+  /* Barra de navegación */
+
+  .nav__ul {
+    background-color: transparent;
+    padding: 0;
+    margin-left: 0;
+    float: none;
+    text-align: center;
+    margin-top: -25px;
+  }
+  .redes__ul {
+    display: none;
+  }
+  .nav__li {
+    background-color: #ff7aba;
+    display: block;
+    float: none;
+    width: 100%;
+    border-radius: 7px;
+    margin: 3px;
+    box-shadow: 2px 0 4px #262626;
+  }
+  .nav__ul a:hover {
+    width: 100%;
+  }
+  .redes__ul-responsive {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: inline-block;
+  }
+  .redes__ul a,
+  .redes__ul-responsive a {
+    font-size: 28px;
+    margin: 7px 12px;
+    height: auto;
+    line-height: normal;
+  }
+  .nav__ul a {
+    font-size: 23px;
+    height: auto;
+    line-height: normal;
+  }
+  /* frase */
+  #frase {
+    height: 40px;
+    line-height: normal;
+    width: 100%;
+    margin-top: -18px;
+    box-shadow: 2px 2px 4px #262626;
+    margin-left: 2px;
+  }
+  #span__mariposa,
+  #span__vengan {
+    display: none;
+  }
+
+  /* SECTION */
+  section {
+    height: auto;
+    position: static;
+    overflow: hidden;
+  }
+
+  /* contenedor izquierda */
+  .contenedor-I {
+    height: auto;
+    width: 100%;
+    float: none;
+  }
+  .contenedor-I__titulo,
+  .contenedor-I__imagen,
+  .contenedor-I__desc,
+  .articulo__titulo,
+  .contenedor-I__pie {
+    height: auto;
+    width: 100%;
+  }
+  .contenedor-I__desc {
+    font-size: 15px;
   }
   /* contenedor derecha */
-  .contenedor-D{
-      height: auto;
-      width: 100%;
-      padding: 20px;
+  .contenedor-D {
+    height: auto;
+    width: 100%;
+    padding: 20px;
   }
-  .contenedor-D__titulo, .contenedor-D__plantas,  .plantas__imagen, .plantas__descripcion, .contenedor-D__mas{
-     height: auto;
-     width: 100%;
+  .contenedor-D__titulo,
+  .contenedor-D__plantas,
+  .plantas__imagen,
+  .plantas__descripcion,
+  .contenedor-D__mas {
+    height: auto;
+    width: 100%;
   }
-  .contenedor-D__titulo{
-      margin: -20px 0 5px;
+  .contenedor-D__titulo {
+    margin: -20px 0 5px;
   }
-  .contenedor-D__plantas, .contenedor-D__mas{
-      margin: 10px 0;
+  .contenedor-D__plantas,
+  .contenedor-D__mas {
+    margin: 10px 0;
   }
-  .plantas__imagen{
-      width: 95%;
-      margin: 2.5%;
+  .plantas__imagen {
+    width: 95%;
+    margin: 2.5%;
   }
-  .plantas__descripcion{
-     width: 95%;
-     margin: 0 2.5% 3%;
-     font-size: 30px;
-  } 
- 
-  .plantas__descripcion h3, #jazmin_de_leche_h3{
-     color: #ffffff;
-     line-height: 1.8;
-     font-size: 28px;
+  .plantas__descripcion {
+    width: 95%;
+    margin: 0 2.5% 3%;
+    font-size: 30px;
   }
-  .contenedor-D__mas{
-     position: relative;
-     top: 15px;
-     margin-bottom: 25px;
-     overflow: hidden;
-     font-size: 25px;
+
+  .plantas__descripcion h3,
+  #jazmin_de_leche_h3 {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 28px;
   }
-  .contenedor-D__mas a{
-     width: 100%;
-     font-size: 23px;
+  .contenedor-D__mas {
+    position: relative;
+    top: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    font-size: 25px;
   }
- 
+  .contenedor-D__mas a {
+    width: 100%;
+    font-size: 23px;
+  }
+
   /* divs violetas */
-  
+
   /* FOOTER */
- 
- .footer__info-I, .footer__info-D{
-     height: auto;
-     width: 45%;
- }
- details p{
-     width: auto;
-     background-color: #69f;
-     margin-top: 2px;
-     height: auto;
-     padding: 5px;
-     border-radius: 7px;
-     box-shadow:3px 3px 4px #262626;
-     line-height: 1.3;
-     text-align: center;
- }
- 
-  
+
+  .footer__info-I,
+  .footer__info-D {
+    height: auto;
+    width: 45%;
+  }
+  details p {
+    width: auto;
+    background-color: #69f;
+    margin-top: 2px;
+    height: auto;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 4px #262626;
+    line-height: 1.3;
+    text-align: center;
+  }
+
   /* -------- OTRAS SECCIONES -------- */
- 
-  .inspiracion__section-div, .contacto__section-div, .vermas__fotos-div{
-     height: auto;
-     width: 98%;
+
+  .inspiracion__section-div,
+  .contacto__section-div,
+  .vermas__fotos-div {
+    height: auto;
+    width: 98%;
   }
- 
+
   /* INSPIRACION */
-  #inspiracion__section{
-      height: 1000px;
+  #inspiracion__section {
+    height: 1000px;
   }
-  iframe{
-      height: auto;
-      width: 100%;
-      margin: 50px 0 10px;
+  iframe {
+    height: auto;
+    width: 100%;
+    margin: 50px 0 10px;
   }
-  #ideas{
-      margin-top: -35px;
+  #ideas {
+    margin-top: -35px;
   }
-  
+
   /* CONTACTO */
-  #contacto__section{
-      height: auto;
+  #contacto__section {
+    height: auto;
   }
-  
-  .contacto__container{
-      width: 98%;
-      height: 460px;
-      margin: 60px auto 30px;
+
+  .contacto__container {
+    width: 98%;
+    height: 460px;
+    margin: 60px auto 30px;
   }
-  .contacto__foto{
-     display: none;
+  .contacto__foto {
+    display: none;
   }
-  .contacto__formulario{
-     width: 90%;
-     float: none;
-     margin: auto;
+  .contacto__formulario {
+    width: 90%;
+    float: none;
+    margin: auto;
   }
-  .contacto__formulario ul{
-      padding: 5%;
+  .contacto__formulario ul {
+    padding: 5%;
   }
-  .contacto__formulario ul li{
-      width: 100%;
+  .contacto__formulario ul li {
+    width: 100%;
   }
-  input, textarea, select{
-      width: 100%;
+  input,
+  textarea,
+  select {
+    width: 100%;
   }
-  #submit{
-      width: 50%;
-      margin: 15px auto;
+  #submit {
+    width: 50%;
+    margin: 15px auto;
   }
   /* FOTOS */
-  #vermas__fotos{
-      height: auto;
+  #vermas__fotos {
+    height: auto;
   }
-  .vermas__fotos-div{
-      margin-top: -25px;  
+  .vermas__fotos-div {
+    margin-top: -25px;
   }
-  .vermas__fotos-h2{
-      font-size: 18px;
+  .vermas__fotos-h2 {
+    font-size: 18px;
   }
-  .vermas__fotos-menu{
-      height: auto;
-      width: 100%;
-      z-index: 1000;
- }
-  .vermas__fotos-ul{
-      width: 100%;
-      margin: 10px 0 10px -10px;
+  .vermas__fotos-menu {
+    height: auto;
+    width: 100%;
+    z-index: 1000;
   }
-  .vermas__fotos-a{
-     font-size: 16px;
-     text-align: center;
+  .vermas__fotos-ul {
+    width: 100%;
+    margin: 10px 0 10px -10px;
   }
-  .vermas__fotos-a:hover{
-     width: 98%;
-     padding: 6px 30px;
+  .vermas__fotos-a {
+    font-size: 16px;
+    text-align: center;
   }
-  .vermas__contenedor1{
-     width: 100%;
-     float: none;
-     height: auto;
-     margin-bottom: 20px;
- }
- .vermas__contenedor1-imagenes{
-     width: 98%;
-     height: auto;
-     margin: 5px 0 10px;
-     float: none;
+  .vermas__fotos-a:hover {
+    width: 98%;
+    padding: 6px 30px;
   }
-  .vermas__contenedor2{
-      display: none;
+  .vermas__contenedor1 {
+    width: 100%;
+    float: none;
+    height: auto;
+    margin-bottom: 20px;
   }
- }
+  .vermas__contenedor1-imagenes {
+    width: 98%;
+    height: auto;
+    margin: 5px 0 10px;
+    float: none;
+  }
+  .vermas__contenedor2 {
+    display: none;
+  }
+}
