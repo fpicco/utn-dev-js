@@ -1,20 +1,21 @@
 var nombre = document.getElementById("nombre");
 var email = document.getElementById("email");
 var tel = document.getElementById("tel");
-var motivos = document.getElementById("motivos");
+// var motivos = document.getElementById("motivos");
 var comentarios = document.getElementById("comentarios");
+var eligeOpc = document.getElementById("eligeopc")
 
 function validarForm() {
   nombre.addEventListener("input", validarNombre);
   email.addEventListener("input", validarEmail);
   tel.addEventListener("input", validarTel);
-  motivos.addEventListener("input", validarMotivos);
+//   motivos.addEventListener("input", validarMotivos);
   comentarios.addEventListener("input", validarComentarios);
 
   validarNombre();
   validarEmail();
   validarTel();
-  validarMotivos();
+//   validarMotivos();
   validarComentarios();
 }
 function validarNombre() {
@@ -58,17 +59,22 @@ function validarTel() {
     tel.setCustomValidity("");
   }
 }
-function validarMotivos() {
-  if (motivos.value == "") {
-    motivos.style.backgroundColor = "#ffc7c7";
-    motivos.setCustomValidity(
-      "Por favor, ayudanos a estar listos para asesorarte :)"
-    );
-  } else {
-    motivos.style.backgroundColor = "#ccffc7";
-    motivos.setCustomValidity("");
-  }
-}
+// function validarMotivos() {
+//   if (motivos.value == eligeOpc){
+//     motivos.setCustomValidity(
+//         "Por favor, elige la opción que mejor se ajuste a tu búsqueda :)"
+//       );
+//   } 
+//   else if (motivos.value == "s"){
+//     motivos.style.backgroundColor = "#ffc7c7";
+//     motivos.setCustomValidity(
+//       "Por favor, ayudanos a estar listos para asesorarte :)"
+//     );
+//   } else {
+//     motivos.style.backgroundColor = "#ccffc7";
+//     motivos.setCustomValidity("");
+//   }
+// }
 
 function validarComentarios() {
   if (comentarios.value == "") {
