@@ -64,23 +64,7 @@
             </div>
 
             <form class="contacto__formulario">
-                <!-- <ul>
-                    <li>Nombre completo <input type="text" name="nombre" required></li>
-                    <li>Email <input type="email" name="email" required> </li>
-                    <li>Telefono <input type="number" name="tel" required> </li>
-                    <li>Motivo de consulta
-                        <select name="motivos" required>
-                            <option value="">Elige una opción</option>
-                            <option value="consultas"> Consultas varias</option>
-                            <option value="viveros"> Viveros </option>
-                            <option value="clima"> Clima </option>
-                            <option value="asistencia"> Asistencia personalizada</option>
-                            <option value="otro"> Otro</option>
-                        </select>
-                    </li>
-                    <li>Comentarios: <br> <textarea name="comentarios" cols="37" rows="4"></textarea> </li>
-                    <li><input type="submit" id="submit"></li>
-                </ul> -->
+
                 <label for="nombre">Nombre completo*</label>
                 <input type="text" name="nombre" id="nombre" maxlength="40" autofocus>
 
@@ -106,8 +90,30 @@
                 <input type="submit" id="submit">
                 <p>* campos obligatorios</p>
             </form>
+        </div>
 
+        <div class="calculadora-container ">
+            <h3 class="calculadora-h3">Calculá el costo de visita de uno de nuestros paisajistas a tu casa.</h3>
+            <label for="paisajista">Paisajista</label>
+            <select name="paisajista" id="paisajista">
+                <option value="">Elige un paisajista</option>
+                <option value="parilli">María Parilli</option>
+                <option value="rosales">Martín Rosales </option>
+                <option value="marquatto">Julieta Marquatto </option>
+                <option value="rottili">Tomás Rottili</option>
+                <option value="lostich">Juana Lostich</option>
+                <option value="pereira">Sabrina Pereira</option>
+            </select>
+            <label for="ubicacion">Tu ubicación</label>
+            <select name="ubicacion" id="ubicacion">
+                <option value="">Elige tu ubicación</option>
+                <option value="ciudad"> Ciudad de Córdoba</option>
+                <option value="provincia"> Provincia de Córdoba</option>
+                <option value="fueraProv"> Fuera de la provincia de Córdoba</option>
+            </select>
+            <button onclick="sumar()" id="calcularCosto">Calcular costo</button>
 
+            <div class="costoTotal" id="costoTotal"></div>
         </div>
     </section>
 
@@ -126,6 +132,7 @@
     <!-- <script type="text/javascript" src="jsFlor/infousuariocontacto.js"></script> -->
     <script type="text/javascript" src="jsFlor/validarformulario.js"></script>
     <!-- <script type="text/javascript" src="jsFlor/validarformulario2.js"></script> -->
+    <script type="text/javascript" src="jsFlor/calculadora.js"></script>
 </body>
 
 </html>
