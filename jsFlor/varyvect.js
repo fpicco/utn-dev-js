@@ -19,7 +19,7 @@ var div = document.createElement("div");
 
 // Creación de titulo y subtitulo de la lista 
 var tituloLista = document.createElement("h2");
-tituloLista.innerHTML = "Las proximas plantas incorporadas a nuestra web serán: ";
+tituloLista.innerHTML = "Próximas plantas a incorporar a nuestra web: ";
 var subtituloLista = document.createElement("h3");
 subtituloLista.innerHTML = "(Orden según solicitudes previas de otros usuarios)";
 
@@ -51,10 +51,10 @@ div.style.height = "auto";
 div.style.textTransform = "none";
 div.style.padding = "10px";
 div.style.marginTop = "-260px"
-tituloLista.style.fontSize = "25px";
+tituloLista.style.fontSize = "23px";
 tituloLista.style.color = "#ffffff";
 tituloLista.style.margin = "-10px 10px 10px 20px";
-subtituloLista.style.fontSize = "20px";
+subtituloLista.style.fontSize = "18px";
 subtituloLista.style.marginTop = "-20px";
 subtituloLista.style.marginBottom = "10px";
 list.style.marginTop = "-10px";

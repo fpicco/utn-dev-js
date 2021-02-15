@@ -91,28 +91,28 @@
                 <p>* campos obligatorios</p>
             </form>
         </div>
-
+        <div class="calculadora__section-div">
+            <h2 class="calculadora__section-h2">Calculá el costo de visita de uno de nuestros paisajistas a tu casa</h2>
+        </div>
         <div class="calculadora-container ">
-            <h3 class="calculadora-h3">Calculá el costo de visita de uno de nuestros paisajistas a tu casa.</h3>
-            <label for="paisajista">Paisajista</label>
+            <!-- <label for="paisajista">Paisajista</label> -->
             <select name="paisajista" id="paisajista">
                 <option value="">Elige un paisajista</option>
-                <option value="parilli">María Parilli</option>
-                <option value="rosales">Martín Rosales </option>
-                <option value="marquatto">Julieta Marquatto </option>
-                <option value="rottili">Tomás Rottili</option>
-                <option value="lostich">Juana Lostich</option>
-                <option value="pereira">Sabrina Pereira</option>
+                <option value="parilli" id="parilli">María Parilli</option>
+                <option value="rosales" id="rosales">Martín Rosales </option>
+                <option value="marquatto" id="marquatto">Julieta Marquatto </option>
+                <option value="rottili" id="rottili">Tomás Rottili</option>
+                <option value="lostich" id="lostich">Juana Lostich</option>
+                <option value="pereira" id="pereira">Sabrina Pereira</option>
             </select>
-            <label for="ubicacion">Tu ubicación</label>
+            <!-- <label for="ubicacion">Tu ubicación</label> -->
             <select name="ubicacion" id="ubicacion">
                 <option value="">Elige tu ubicación</option>
-                <option value="ciudad"> Ciudad de Córdoba</option>
-                <option value="provincia"> Provincia de Córdoba</option>
-                <option value="fueraProv"> Fuera de la provincia de Córdoba</option>
+                <option value="ciudad" id="ciudad"> Ciudad de Córdoba</option>
+                <option value="provincia" id="provincia"> Provincia de Córdoba</option>
+                <option value="fueraProv" id="fueraProv"> Fuera de la provincia de Córdoba</option>
             </select>
-            <button onclick="sumar()" id="calcularCosto">Calcular costo</button>
-
+            <button id="calcularCosto">Calcular</button>
             <div class="costoTotal" id="costoTotal"></div>
         </div>
     </section>

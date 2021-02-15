@@ -358,7 +358,8 @@ details p {
 .inspiracion__section-div,
 .contacto__section-div,
 .vermas__fotos-div,
-.jardines__section-div {
+.jardines__section-div,
+.calculadora__section-div {
   background: #bf7aff;
   height: 53px;
   width: 840px;
@@ -369,16 +370,25 @@ details p {
   box-shadow: 2px 2px 4px #262626;
   text-transform: capitalize;
 }
+.calculadora__section-div {
+  text-transform: none;
+}
+
 .inspiracion__section-h2,
 .contacto__section-h2,
 .vermas__fotos-h2,
-.jardines__section-h2 {
+.jardines__section-h2,
+.calculadora__section-h2 {
   color: #fff;
   text-align: center;
   line-height: 2em;
 }
-.jardines__section-h2{
-    margin-bottom: 20px;
+.calculadora__section-h2 {
+  font-size: 26px;
+  margin-top: -60px;
+}
+.jardines__section-h2 {
+  margin-bottom: 20px;
 }
 /* INSPIRACION */
 #inspiracion__section {
@@ -406,15 +416,15 @@ iframe {
   border-radius: 7px;
   box-shadow: 2px 2px 4px #262626;
 }
-.jardines-img:hover{
-    transform: scale(1.05);
+.jardines-img:hover {
+  transform: scale(1.05);
 }
-.jardines__section-div{
-margin-top: 180px;
+.jardines__section-div {
+  margin-top: 180px;
 }
 /* CONTACTO */
 #contacto__section {
-  height: 1030px;
+  height: 830px;
 }
 
 .contacto__container {
@@ -485,6 +495,39 @@ select {
   background: #fff;
   cursor: pointer;
   box-shadow: 0 0 10px #fff;
+}
+.calculadora-container {
+  color: #fff;
+  background-color: #ff7aba;
+  width: 840px;
+  height: auto;
+  margin: 60px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 4px #262626;
+}
+#calcularCosto {
+  height: 30px;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  font-size: 22px;
+  background: #bf7aff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+  float: right;
+}
+#calcularCosto:hover {
+  color: #bf7aff;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #fff;
+}
+#paisajista,
+#ubicacion {
+  display: inline;
+  margin: 18px 0 18px 40px;
 }
 /* FOTOS */
 #vermas__fotos {
@@ -669,12 +712,14 @@ select {
   /* -------- OTRAS SECCIONES -------- */
   .inspiracion__section-div,
   .contacto__section-div,
-  .vermas__fotos-div {
+  .vermas__fotos-div,
+  .jardines__section-div,
+  .calculadora__section-div {
     width: 540px;
   }
   /* INSPIRACION */
   #inspiracion__section {
-    height: 1150px;
+    height: 2220px;
     /* height: 850px; */
   }
   iframe {
@@ -682,12 +727,29 @@ select {
     width: 540px;
     margin: 50px 20px 2px;
   }
-  /* CONTACTO */
-  #contacto__section {
-    height: 600px;
+  .jardines__section-h2 {
+    margin-top: 150px;
+  }
+  .jardines-img {
+    width: 45%;
   }
 
-  .contacto__container {
+  #jardin9 {
+    display: none;
+  }
+  .jardines-img:hover {
+    transform: scale(1.05);
+  }
+  .jardines__section-div {
+    margin-top: 180px;
+  }
+  /* CONTACTO */
+  #contacto__section {
+    height: 920px;
+  }
+
+  .contacto__container,
+  .calculadora-container {
     width: 540px;
     height: 455px;
     margin: 60px auto;
@@ -703,6 +765,17 @@ select {
   textarea,
   select {
     width: 450px;
+  }
+  .calculadora__section-div {
+    height: auto;
+  }
+  .calculadora__section-h2 {
+    font-size: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+  .calculadora-container {
+    height: 200px;
   }
   /* ******************** FOTOS ******************** */
   #vermas__fotos {
@@ -877,6 +950,9 @@ select {
     height: auto;
     width: 100%;
   }
+  .plantas__imagen {
+    height: 200px;
+  }
   .contenedor-D__titulo {
     margin: -20px 0 5px;
   }
@@ -937,17 +1013,19 @@ select {
 
   .inspiracion__section-div,
   .contacto__section-div,
-  .vermas__fotos-div {
+  .vermas__fotos-div,
+  .jardines__section-div,
+  .calculadora__section-div {
     height: auto;
     width: 98%;
   }
 
   /* INSPIRACION */
   #inspiracion__section {
-    height: 1000px;
+    height: 3800px;
   }
   iframe {
-    height: auto;
+    height: 300px;
     width: 100%;
     margin: 50px 0 10px;
   }
@@ -955,16 +1033,33 @@ select {
     margin-top: -35px;
   }
 
+  .jardines-img {
+    height: auto;
+    width: 95%;
+  }
+
+  .jardines-img:hover {
+    transform: scale(1.05);
+  }
+  .jardines__section-div {
+    height: 50px;
+    margin-top: 180px;
+    position: relative;
+    top: 70px;
+  }
+
   /* CONTACTO */
   #contacto__section {
     height: auto;
   }
 
-  .contacto__container {
+  .contacto__container,
+  .calculadora-container {
     width: 98%;
     height: 460px;
     margin: 60px auto 30px;
   }
+
   .contacto__foto {
     display: none;
   }
@@ -987,6 +1082,28 @@ select {
   #submit {
     width: 50%;
     margin: 15px auto;
+  }
+  .calculadora__section-div {
+    height: auto;
+    margin-top: -40px;
+  }
+  .calculadora-container {
+    height: auto;
+    padding: 20px;
+  }
+  .calculadora__section-h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    line-height: normal;
+  }
+
+  #paisajista, #ubicacion {
+    width: 100%;
+    margin: 10px 0;
+  }
+  #calcularCosto{
+      margin: 10px 60px 15px;
   }
   /* FOTOS */
   #vermas__fotos {
