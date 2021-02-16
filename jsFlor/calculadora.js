@@ -1,4 +1,4 @@
-//Uso de funciones para calcular el costo de visita a domicilio de los distintos paisajistas. Aplicado en la sección CONTACTO.
+////----------------------------------USO DE FUNCIONES - Calculadora de precios. Sección CONTACTO.
 
 
 //Agrego el evento click al boton para al presionarlo ejecute la funcion sumar.

@@ -1,3 +1,5 @@
+//----------------------------------USO DE FUNCIONES - IMAGENES DINAMICAS. Seccion inicio
+
 //Creacion de Arrays con URL imagenes
 var imagenesHortensia = [
   "imagenes/vermas_hortensia.jpg",

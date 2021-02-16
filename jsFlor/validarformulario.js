@@ -1,4 +1,4 @@
-// Validacion de formulario
+//----------------------------------VALIDACION DE FORMULARIO. Seccion contacto
 
 //Obtencion de los elementos HTML a traves del DOM
 var nombre = document.getElementById("nombre");
@@ -24,6 +24,7 @@ function validarForm() {
 
 //Funciones para validar los distintos campos.
 function validarNombre() {
+   //Condicional que analiza los datos ingresados
   if (nombre.value == "") {
     nombre.setCustomValidity("Por favor, escribe tu nombre");
   } else if (nombre.value.length < 5) {
