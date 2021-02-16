@@ -1,23 +1,28 @@
+// Validacion de formulario
+
+//Obtencion de los elementos HTML a traves del DOM
 var nombre = document.getElementById("nombre");
 var email = document.getElementById("email");
 var tel = document.getElementById("tel");
-// var motivos = document.getElementById("motivos");
+var motivos = document.getElementById("motivos");
 var comentarios = document.getElementById("comentarios");
-var eligeOpc = document.getElementById("eligeopc")
 
+//Funcion con los eventos para validar los campos del formulario al rellenados
 function validarForm() {
   nombre.addEventListener("input", validarNombre);
   email.addEventListener("input", validarEmail);
   tel.addEventListener("input", validarTel);
-//   motivos.addEventListener("input", validarMotivos);
+  motivos.addEventListener("input", validarMotivos);
   comentarios.addEventListener("input", validarComentarios);
 
   validarNombre();
   validarEmail();
   validarTel();
-//   validarMotivos();
+  validarMotivos();
   validarComentarios();
 }
+
+//Funciones para validar los distintos campos.
 function validarNombre() {
   if (nombre.value == "") {
     nombre.setCustomValidity("Por favor, escribe tu nombre");
@@ -30,19 +35,16 @@ function validarNombre() {
   }
 }
 
-//PREGUNTAR AGUSSSSSS
-
 function validarEmail() {
-  var regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/;
+  var regExp = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
   if (email.value == "") {
     email.setCustomValidity("Por favor, escribe tu e-mail");
   } else if (regExp.test(email.value)) {
-    email.style.backgroundColor = "#ffc7c7";
-    email.setCustomValidity();
-    ("Por favor, completa correctamente tu e-mail para poder contactarte :) ");
-  } else {
     email.style.backgroundColor = "#ccffc7";
     email.setCustomValidity("");
+  } else {
+    email.style.backgroundColor = "#ffc7c7";
+    email.setCustomValidity("Por favor, completa correctamente tu e-mail para poder contactarte :) ");
   }
 }
 
@@ -59,27 +61,22 @@ function validarTel() {
     tel.setCustomValidity("");
   }
 }
-// function validarMotivos() {
-//   if (motivos.value == eligeOpc){
-//     motivos.setCustomValidity(
-//         "Por favor, elige la opción que mejor se ajuste a tu búsqueda :)"
-//       );
-//   } 
-//   else if (motivos.value == "s"){
-//     motivos.style.backgroundColor = "#ffc7c7";
-//     motivos.setCustomValidity(
-//       "Por favor, ayudanos a estar listos para asesorarte :)"
-//     );
-//   } else {
-//     motivos.style.backgroundColor = "#ccffc7";
-//     motivos.setCustomValidity("");
-//   }
-// }
+function validarMotivos() {
+  if (motivos.value == ""){
+    motivos.style.backgroundColor = "#fff";
+    motivos.setCustomValidity(
+      "Por favor, elige la opción que mejor se ajuste a tu búsqueda :)"
+      );
+  } else {
+    motivos.style.backgroundColor = "#ccffc7";
+    motivos.setCustomValidity("");
+  }
+}
 
 function validarComentarios() {
   if (comentarios.value == "") {
     comentarios.setCustomValidity("Por favor, cuentanos sobre tus objetivos :)");
-  } else if (comentarios.value.length < 20) {
+  } else if (comentarios.value.length < 15) {
     comentarios.style.backgroundColor = "#ffc7c7";
     comentarios.setCustomValidity("Explayate un poco más!");
   } else {
@@ -88,4 +85,5 @@ function validarComentarios() {
   }
 }
 
+//Evento para ejecutar la validación luego de la carga de la página.
 window.addEventListener("load", validarForm);

@@ -65,7 +65,7 @@ function sumar() {
   distancia = document.getElementById(distancia).text;
 
   //Impresión en pantalla del costo del paisajista a domicilio.
-  costoTotal.innerHTML = `El costo de la visita a domicilio por nuestro paisajista ${persona} a ${minusculaPrimerLetra(
+  costoTotal.innerHTML = `El costo de la visita por nuestro paisajista ${persona} a ${minusculaPrimerLetra(
     distancia
   )} es : $ ${precioPaisajista + precioDistancia}`;
 }
