@@ -80,7 +80,8 @@ header {
   margin-top: 0;
 }
 .nav__li,
-.redes__li {
+.redes__li,
+.controls__li {
   display: inline;
 }
 .nav__li {
@@ -394,9 +395,10 @@ details p {
 #inspiracion__section {
   height: 2270px;
 }
-iframe {
+iframe,
+video {
   height: 472.5px;
-  width: 840px;
+  width: 835px;
   margin: 60px 60px 0;
   border: 7px solid #bf7aff;
   border-radius: 7px;
@@ -604,6 +606,40 @@ select {
   background: #ff7aba;
 }
 
+/* controls */
+#video__container {
+  /* background-color: red; */
+  position: relative;
+}
+
+.controls {
+  background-color: #bf7aff;;
+  width: 825px;
+  height: 80px;
+  position: absolute;
+  bottom: 10px;
+  left: 65px;
+  z-index: 10000;
+  cursor: pointer;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: visibility 0.7s, opacity 0.4s linear;
+}
+#video__container:hover > .controls{
+  visibility: visible;
+  opacity: 0.8;
+}
+.controls__ul{
+  position: relative;
+  left: 190px;
+}
+.controls a {
+  position: relative;
+  color: #fff;
+  font-size: 50px;
+  margin: 0px 20px;
+}
+
 /* **************************** RESPONSIVE TABLET **************************** */
 @media all and (min-width: 600px) and (max-width: 1023px) {
   header,
@@ -721,7 +757,8 @@ select {
     height: 2220px;
     /* height: 850px; */
   }
-  iframe {
+  iframe,
+  video {
     height: 318px;
     width: 540px;
     margin: 50px 20px 2px;
@@ -776,7 +813,8 @@ select {
   .calculadora-container {
     height: 210px;
   }
-  #paisajista, #ubicacion{
+  #paisajista,
+  #ubicacion {
     margin-left: 20px;
   }
   /* ******************** FOTOS ******************** */
@@ -1026,7 +1064,8 @@ select {
   #inspiracion__section {
     height: 3000px;
   }
-  iframe {
+  iframe,
+  video {
     height: 300px;
     width: 100%;
     margin: 50px 0 10px;
@@ -1058,13 +1097,14 @@ select {
     font-size: 18px;
   }
 
-  #h2-js, #sub-js{
+  #h2-js,
+  #sub-js {
     line-height: 1.5em;
   }
-  #sub-js{
+  #sub-js {
     display: none;
   }
-  
+
   /* CONTACTO */
   #contacto__section {
     height: auto;
@@ -1100,7 +1140,7 @@ select {
     width: 50%;
     margin: 15px auto;
   }
-  
+
   .calculadora__section-div {
     height: auto;
     margin-top: -40px;
