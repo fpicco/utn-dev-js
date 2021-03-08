@@ -398,7 +398,7 @@ details p {
 iframe,
 video {
   height: 472.5px;
-  width: 835px;
+  width: 829px;
   margin: 60px 60px 0;
   border: 7px solid #bf7aff;
   border-radius: 7px;
@@ -614,7 +614,7 @@ select {
 
 .controls {
   background-color: #bf7aff;
-  width: 825px;
+  width: 823px;
   height: 80px;
   position: absolute;
   bottom: 10px;
@@ -788,6 +788,7 @@ select {
   }
   .controls__ul {
     left: 120px;
+    width: 400px;
   }
   .controls a {
     font-size: 30px;
@@ -876,8 +877,6 @@ select {
     float: none;
   }
 }
-/* controls */
-
 /* **************************** RESPONSIVE CELU **************************** */
 @media all and (max-width: 599px) {
   header,
@@ -1087,7 +1086,6 @@ select {
   }
   /* controls */
   #video__container {
-    /* background-color: red; */
     position: relative;
   }
 
@@ -1098,11 +1096,19 @@ select {
     left: 0;
     border-bottom-left-radius:  7px;
     border-bottom-right-radius:  7px;
-    opacity: 0.9;
+    opacity: 1 !important;
   }
   .controls__ul {
-    position: relative;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    top: 8;
+    right: 0;
     left: 0;
+    margin: auto;
+  }
+  .controls__li{
+    margin: 5px 0px;
   }
   .controls a {
     position: relative;
