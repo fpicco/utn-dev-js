@@ -393,7 +393,7 @@ details p {
 }
 /* INSPIRACION */
 #inspiracion__section {
-  height: 2270px;
+  height: 1720px;
 }
 iframe,
 video {
@@ -613,7 +613,7 @@ select {
 }
 
 .controls {
-  background-color: #bf7aff;;
+  background-color: #bf7aff;
   width: 825px;
   height: 80px;
   position: absolute;
@@ -625,11 +625,11 @@ select {
   opacity: 0;
   transition: visibility 0.7s, opacity 0.4s linear;
 }
-#video__container:hover > .controls{
+#video__container:hover > .controls {
   visibility: visible;
   opacity: 0.8;
 }
-.controls__ul{
+.controls__ul {
   position: relative;
   left: 190px;
 }
@@ -754,12 +754,11 @@ select {
   }
   /* INSPIRACION */
   #inspiracion__section {
-    height: 2220px;
-    /* height: 850px; */
+    height: 1800px;
   }
   iframe,
   video {
-    height: 318px;
+    height: 310px;
     width: 540px;
     margin: 50px 20px 2px;
   }
@@ -778,6 +777,21 @@ select {
   }
   .jardines__section-div {
     margin-top: 180px;
+  }
+
+  /* controls */
+
+  .controls {
+    width: 530px;
+    height: 60px;
+    left: 25px;
+  }
+  .controls__ul {
+    left: 120px;
+  }
+  .controls a {
+    font-size: 30px;
+    margin: 0px 10px;
   }
   /* CONTACTO */
   #contacto__section {
@@ -862,6 +876,7 @@ select {
     float: none;
   }
 }
+/* controls */
 
 /* **************************** RESPONSIVE CELU **************************** */
 @media all and (max-width: 599px) {
@@ -1062,14 +1077,40 @@ select {
 
   /* INSPIRACION */
   #inspiracion__section {
-    height: 3000px;
+    height: 2550px;
   }
   iframe,
   video {
-    height: 300px;
+    height: 50%;
     width: 100%;
     margin: 50px 0 10px;
   }
+  /* controls */
+  #video__container {
+    /* background-color: red; */
+    position: relative;
+  }
+
+  .controls {
+    width: 100%;
+    height: 35px;
+    bottom: -16px;
+    left: 0;
+    border-bottom-left-radius:  7px;
+    border-bottom-right-radius:  7px;
+    opacity: 0.9;
+  }
+  .controls__ul {
+    position: relative;
+    left: 0;
+  }
+  .controls a {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+
   #ideas {
     margin-top: -35px;
   }
@@ -1085,13 +1126,13 @@ select {
   }
   #div-js {
     position: relative;
-    top: 30px;
+    top: 60px;
   }
 
   .jardines__section-div {
     height: 50px;
     position: relative;
-    top: 15px;
+    top: 45px;
   }
   .jardines__section-h2 {
     font-size: 18px;
