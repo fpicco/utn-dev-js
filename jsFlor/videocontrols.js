@@ -4,6 +4,7 @@ var botonStop = document.getElementById("stop");
 var botonForward = document.getElementById("forward");
 var botonBackward = document.getElementById("backward");
 
+
 function eventos() {
   botonPlay.addEventListener("click", playVideo);
   botonStop.addEventListener("click", stopVideo);

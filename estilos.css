@@ -360,7 +360,8 @@ details p {
 .contacto__section-div,
 .vermas__fotos-div,
 .jardines__section-div,
-.calculadora__section-div {
+.calculadora__section-div,
+.webpaisajistas__section-div {
   background: #bf7aff;
   height: 53px;
   width: 840px;
@@ -379,7 +380,8 @@ details p {
 .contacto__section-h2,
 .vermas__fotos-h2,
 .jardines__section-h2,
-.calculadora__section-h2 {
+.calculadora__section-h2,
+.webpaisajistas__section-h2 {
   color: #fff;
   text-align: center;
   line-height: 2em;
@@ -425,7 +427,7 @@ video {
 }
 /* CONTACTO */
 #contacto__section {
-  height: 830px;
+  height: 1230px;
 }
 
 .contacto__container {
@@ -497,7 +499,8 @@ select {
   cursor: pointer;
   box-shadow: 0 0 10px #fff;
 }
-.calculadora-container {
+.calculadora-container,
+.webpaisajistas-container {
   color: #fff;
   background-color: #ff7aba;
   width: 840px;
@@ -529,6 +532,41 @@ select {
 #ubicacion {
   display: inline;
   margin: 18px 0 18px 40px;
+}
+.webpaisajistas__section-div {
+  margin-top: -70px;
+  text-transform: none;
+}
+.webpaisajistas-ul {
+  list-style-type: none;
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.webpaisajistas-li{
+  flex: 1 0 auto;
+  text-align: center;
+  width: 25%;
+  margin: 5px;
+}
+.webpaisajistas-a {
+  color: #ffffff;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.webpaisajistas-a:hover {
+  /* background-color:hsla(360, 100%, 100%, 0.7); */
+  /* color: #ff7aba; */
+  border-radius: 7px;
+  transform: scale(1.1);
+}
+.webpaisajistas-img{
+  width: 50%;
+  border-radius: 50%;
 }
 /* FOTOS */
 #vermas__fotos {
@@ -749,7 +787,8 @@ select {
   .contacto__section-div,
   .vermas__fotos-div,
   .jardines__section-div,
-  .calculadora__section-div {
+  .calculadora__section-div,
+  .webpaisajistas__section-div {
     width: 540px;
   }
   /* INSPIRACION */
@@ -796,11 +835,12 @@ select {
   }
   /* CONTACTO */
   #contacto__section {
-    height: 920px;
+    height: 1250px;
   }
 
   .contacto__container,
-  .calculadora-container {
+  .calculadora-container,
+  .webpaisajistas-container {
     width: 540px;
     height: 455px;
     margin: 60px auto;
@@ -809,7 +849,6 @@ select {
     display: none;
   }
   .contacto__formulario {
-    /* background-color: red; */
     margin: 0 45px;
   }
   input,
@@ -820,13 +859,17 @@ select {
   .calculadora__section-div {
     height: auto;
   }
-  .calculadora__section-h2 {
+  .calculadora__section-h2,
+  .webpaisajistas__section-h2 {
     font-size: 20px;
     padding: 10px;
     line-height: normal;
   }
   .calculadora-container {
     height: 210px;
+  }
+  .webpaisajistas-container{
+    height: 190px;
   }
   #paisajista,
   #ubicacion {
@@ -1069,7 +1112,8 @@ select {
   .contacto__section-div,
   .vermas__fotos-div,
   .jardines__section-div,
-  .calculadora__section-div {
+  .calculadora__section-div,
+  .webpaisajistas__section-div {
     height: auto;
     width: 98%;
   }
@@ -1094,8 +1138,8 @@ select {
     height: 35px;
     bottom: -16px;
     left: 0;
-    border-bottom-left-radius:  7px;
-    border-bottom-right-radius:  7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     opacity: 1 !important;
   }
   .controls__ul {
@@ -1107,7 +1151,7 @@ select {
     left: 0;
     margin: auto;
   }
-  .controls__li{
+  .controls__li {
     margin: 5px 0px;
   }
   .controls a {
@@ -1158,7 +1202,8 @@ select {
   }
 
   .contacto__container,
-  .calculadora-container {
+  .calculadora-container,
+  .webpaisajistas-container {
     width: 98%;
     height: 460px;
     margin: 60px auto 30px;
@@ -1192,18 +1237,23 @@ select {
     height: auto;
     margin-top: -40px;
   }
-  .calculadora-container {
+  
+  .calculadora-container,
+  .webpaisajistas-container {
     height: 270px;
     padding: 20px;
     position: relative;
   }
-  .calculadora__section-h2 {
+  .calculadora__section-h2,
+  .webpaisajistas__section-h2 {
     font-size: 20px;
     margin: 0;
     padding: 10px;
     line-height: normal;
   }
-
+  .webpaisajistas__section-h2 {
+    margin-top: 50px;
+  }
   #paisajista,
   #ubicacion {
     width: 100%;
@@ -1215,6 +1265,28 @@ select {
     bottom: 10%;
     left: 33%;
   }
+  
+  .webpaisajistas-container{
+    height: auto;
+  }
+  
+  .webpaisajistas-ul {
+    display: block;
+  }
+  .webpaisajistas-li{
+    width: 100%;
+  }
+  .webpaisajistas-a{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .webpaisajistas-img{
+    width: 30%;
+  }
+  .webpaisajistas-a:hover{
+    transform: scale(1.1);
+  }
+
   /* FOTOS */
   #vermas__fotos {
     height: auto;
