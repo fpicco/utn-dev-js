@@ -3,7 +3,7 @@ var botonPlay = document.getElementById("play");
 var botonStop = document.getElementById("stop");
 var botonForward = document.getElementById("forward");
 var botonBackward = document.getElementById("backward");
-
+video1.load();
 
 function eventos() {
   botonPlay.addEventListener("click", playVideo);
@@ -32,7 +32,7 @@ function playVideo() {
 
 function stopVideo() {
   video.pause();
-  video.currentTime = 0;
+  video1.load();
   botonPlay.innerHTML = "<span class='icon-play'></span>";
 }
 
