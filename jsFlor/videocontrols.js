@@ -3,7 +3,6 @@ var botonPlay = document.getElementById("play");
 var botonStop = document.getElementById("stop");
 var botonForward = document.getElementById("forward");
 var botonBackward = document.getElementById("backward");
-video1.load();
 
 function eventos() {
   botonPlay.addEventListener("click", playVideo);
