@@ -458,7 +458,7 @@ video {
 }
 .contacto__foto {
   float: left;
-  background-color: #bf7aff;
+  background-color: #fff;
   height: 430px;
   width: 480px;
   border-radius: 7px;
@@ -466,12 +466,13 @@ video {
   object-fit: cover;
   box-shadow: 2px 2px 4px #262626;
   border: 7px solid #bf7aff;
-  margin-left: -15px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .contacto__formulario {
   float: left;
   margin-left: 15px;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 label {
   font-size: 25px;
@@ -891,6 +892,11 @@ select {
   #ubicacion {
     margin-left: 20px;
   }
+
+  /* flores */
+
+
+
   /* ******************** FOTOS ******************** */
   #vermas__fotos {
     height: auto;
