@@ -411,7 +411,7 @@ details p {
 }
 /* INSPIRACION */
 #inspiracion__section {
-  height: 1720px;
+  height: 2720px;
 }
 iframe,
 video {
@@ -441,6 +441,26 @@ video {
 .jardines__section-div {
   margin-top: 180px;
 }
+.inspiracion__section-div-murales {
+  margin-top: 850px;
+}
+.inspiracion__section-div-murales {
+  text-transform: none;
+}
+#murales {
+  width: 840px;
+  height: 400px;
+  margin: 60px 60px 0;
+  border: 7px solid #bf7aff;
+  /* background-color: #fff; */
+  border-radius: 7px;
+}
+/* #mural1 {
+  width: 827px;
+  height: 387px;
+  background-color: red;
+} */
+
 /* CONTACTO */
 #contacto__section {
   height: 1230px;
@@ -894,8 +914,6 @@ select {
   }
 
   /* flores */
-
-
 
   /* ******************** FOTOS ******************** */
   #vermas__fotos {
