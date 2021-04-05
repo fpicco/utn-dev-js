@@ -11,7 +11,7 @@ function muralInspiracion() {
   fondo2.addEventListener("load", aplicarImagen2);
 
   var fondo3 = new Image();
-  fondo3.src = "imagenes/murales/pattern4.jpg";
+  fondo3.src = "imagenes/murales/pattern3.jpeg";
   fondo3.addEventListener("load", aplicarImagen3);
 }
 function aplicarImagen1(e) {
