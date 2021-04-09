@@ -42,4 +42,104 @@ function aplicarImagen3(e) {
   patron1.fillRect(558, 0, 278, 887);
 }
 
+var paleta1 = document.getElementById("paleta1");
+forma1 = paleta1.getContext("2d");
+
+//circulo 1
+forma1.beginPath();
+forma1.arc(120, 50, 40, 0, Math.PI*2, false);
+forma1.fillStyle = "#80bd93";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(120, 50, 28, 0, Math.PI*2, false);
+forma1.fillStyle = "#ff4203";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(120, 50, 16, 0, Math.PI*2, false);
+forma1.fillStyle = "#89da59";
+forma1.fill();
+forma1.closePath();
+
+//circulo 2
+forma1.beginPath();
+forma1.arc(270, 50, 40, 0, Math.PI*2, false);
+forma1.fillStyle = "#5bc8ac";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(270, 50, 28, 0, Math.PI*2, false);
+forma1.fillStyle = "#e6d72a";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(270, 50, 16, 0, Math.PI*2, false);
+forma1.fillStyle = "#f18d9e";
+forma1.fill();
+forma1.closePath();
+
+//circulo 3
+forma1.beginPath();
+forma1.arc(420, 50, 40, 0, Math.PI*2, false);
+forma1.fillStyle = "#fb6542";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(420, 50, 28, 0, Math.PI*2, false);
+forma1.fillStyle = "#3f681c";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(420, 50, 16, 0, Math.PI*2, false);
+forma1.fillStyle = "#ffbb00";
+forma1.fill();
+forma1.closePath();
+
+//circulo 4
+forma1.beginPath();
+forma1.arc(570, 50, 40, 0, Math.PI*2, false);
+forma1.fillStyle = "#1995ad";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(570, 50, 28, 0, Math.PI*2, false);
+forma1.fillStyle = "#bcbabe";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(570, 50, 16, 0, Math.PI*2, false);
+forma1.fillStyle = "#a1d6e2";
+forma1.fill();
+forma1.closePath();
+
+//circulo 5
+forma1.beginPath();
+forma1.arc(720, 50, 40, 0, Math.PI*2, false);
+forma1.fillStyle = "#5d535e";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(720, 50, 28, 0, Math.PI*2, false);
+forma1.fillStyle = "#ec96a4";
+forma1.fill();
+forma1.closePath();
+
+forma1.beginPath();
+forma1.arc(720, 50, 16, 0, Math.PI*2, false);
+forma1.fillStyle = "#dfe166";
+forma1.fill();
+forma1.closePath();
+
+
+
 window.addEventListener("load", muralInspiracion);

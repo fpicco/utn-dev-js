@@ -411,7 +411,7 @@ details p {
 }
 /* INSPIRACION */
 #inspiracion__section {
-  height: 2020px;
+  height: 2260px;
 }
 iframe,
 video {
@@ -444,20 +444,28 @@ video {
 .inspiracion__section-div-murales {
   margin-top: 850px;
 }
-.inspiracion__section-div-murales {
+.inspiracion__section-div-murales,
+.inspiracion__section-div-paletas {
   text-transform: none;
 }
 #murales {
-  width: 840px;
   height: 400px;
-  margin: 60px 60px 0;
+}
+#murales,
+#paletas {
+  width: 840px;
   border: 7px solid #bf7aff;
   border-radius: 7px;
+  margin: 60px 60px 0;
 }
-#div-js{
-  margin-top: -1610px;
+#paletas {
+  height: 110px;
+  background-color: #fff;
 }
 
+#div-js {
+  margin-top: -1610px;
+}
 
 /* CONTACTO */
 #contacto__section {
@@ -852,9 +860,15 @@ select {
   .jardines__section-div {
     margin-top: 180px;
   }
-
-  #murales, .inspiracion__section-div-murales, .inspiracion__section-h2-murales, #mural1{
-    display: none
+  #murales,
+  .inspiracion__section-div-murales,
+  .inspiracion__section-h2-murales,
+  #mural1,
+  #paletas,
+  .inspiracion__section-div-paletas,
+  .inspiracion__section-h2-paletas,
+  #paleta1 {
+    display: none;
   }
   #div-js {
     margin-top: auto;
@@ -1242,10 +1256,16 @@ select {
     display: none;
   }
 
-  #murales, .inspiracion__section-div-murales, .inspiracion__section-h2-murales, #mural1{
-    display: none
+  #murales,
+  .inspiracion__section-div-murales,
+  .inspiracion__section-h2-murales,
+  #mural1,
+  #paletas,
+  .inspiracion__section-div-paletas,
+  .inspiracion__section-h2-paletas,
+  #paleta1 {
+    display: none;
   }
-
 
   /* CONTACTO */
   #contacto__section {
