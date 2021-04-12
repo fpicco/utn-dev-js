@@ -469,7 +469,7 @@ video {
 
 /* CONTACTO */
 #contacto__section {
-  height: 1230px;
+  height: 1280px;
 }
 
 .contacto__container {
@@ -909,7 +909,7 @@ select {
   }
   /* CONTACTO */
   #contacto__section {
-    height: 1250px;
+    height: 1500px;
   }
 
   .contacto__container,
@@ -920,11 +920,26 @@ select {
     margin: 60px auto;
   }
   .contacto__foto {
-    display: none;
+    height: 150px;
+    margin: 20px 30px;
   }
   .contacto__formulario {
     margin: 0 45px;
   }
+/* ---- */
+.contacto__container{
+  height: 720px;
+}
+.contacto__formulario {
+  position: absolute;
+  left: 0;
+  top:200px
+}
+#archivos{
+  width: 100%;
+  margin-top: 25px;
+}
+/* ---- */
   input,
   textarea,
   select {
@@ -1297,14 +1312,15 @@ select {
     height: 460px;
     margin: 60px auto 30px;
   }
-
+  .contacto__container{
+    height: 510px;
+  }
   .contacto__foto {
     display: none;
   }
   .contacto__formulario {
     width: 90%;
-    float: none;
-    margin: auto;
+    left: 5%
   }
   .contacto__formulario ul {
     padding: 5%;
@@ -1320,6 +1336,10 @@ select {
   #submit {
     width: 50%;
     margin: 15px auto;
+  }
+  #archivos{
+    width: 100%;
+    height: 100px;
   }
 
   .calculadora__section-div {
