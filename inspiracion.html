@@ -112,10 +112,44 @@
         </div>
 
         <div class="inspiracion__section-div inspiracion__section-div-paletas">
-            <h2 class="inspiracion__section-h2 inspiracion__section-h2-paletas">¡Este es el top 5 de combinaciones para murales más elegidos!</h2>
+            <h2 class="inspiracion__section-h2 inspiracion__section-h2-paletas">¡Este es el top 5 de combinaciones para
+                murales más elegidos!</h2>
         </div>
         <div id="paletas">
             <canvas id="paleta1" width="827" height="187"></canvas>
+        </div>
+
+        <div class="inspiracion__section-div inspiracion__section-div-notas">
+            <h2 class="inspiracion__section-h2 inspiracion__section-h2-notas">¡Tomá nota de tus ideas!</h2>
+        </div>
+        <div id="notasCliente" class="notasCliente">
+            <p> ¡Si hay algo que nos caracteriza como equipo, es que <u>somos organizados!</u> Por eso, te
+                invitamos a que en este espacio escribas las <u>tareas pendientes</u> a realizar en tu jardín para que el día
+                que nos contactes tengas a mano qué servicios necesitas <br>(Esta información <u>no se enviará</u> a nuestros paisajistas, <u>quedará
+                    almacenada en tu computadora</u> para que puedas agregar y quitar tareas todas las veces que quieras)</p>
+            <form class="tareaCliente__form"> 
+                <label class="tareaCliente__label" for="id">Identificación de la tarea</label>
+                <input class="tareaCliente__input" type="text" id="tareaCliente__id" name="id" min="1" max="100"
+                    placeholder="Ej: Diseño del cantero principal">
+
+                <label class="tareaCliente__label" for="desc">Descripción de la tarea a realizar</label>
+                <textarea class="tareaCliente__textarea" id="tareaCliente__desc" name="desc"
+                    placeholder="Ej: Rellenar con piedras decorativas el cantero con Agapanthus y pintar la pared del mismo."></textarea>
+
+                <label class="tareaCliente__label" for="urg">Nivel de urgencia de la tarea</label>
+                <select class="tareaCliente__select" name="urg" id="tareaCliente__urg">
+                    <option value="">Seleccione la urgencia de la tarea</option>
+                    <option value="muyUrg">Muy urgente</option>
+                    <option value="urg">Urgente</option>
+                    <option value="pocoUrg">Poco urgente</option>
+                </select>
+
+                <label class="tareaCliente__label" for="fecha">Fecha límite</label>
+                <input class="tareaCliente__input" type="date" name="fecha" id="tareaCliente__fecha">
+
+                <input class="tareaCliente__boton"  type="button" id="tareaCliente__guardar" value="Guardar" onclick="nuevaTarea()" >
+            </form>
+            <div id="tareasPendientes" class="tareasPendientes"></div>
         </div>
 
     </section>
@@ -138,7 +172,7 @@
     <script src="jsFlor/videocontrols.js" type="text/javascript"></script>
     <script src="jsFlor/canvas.js" type="text/javascript"></script>
     <!-- <script type="text/javascript" src="jsFlor/varyvect.js"></script> -->
-
+    <script type="text/javascript" src="jsFlor/webstorage.js"></script>
 
 </body>
 

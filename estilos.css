@@ -411,7 +411,7 @@ details p {
 }
 /* INSPIRACION */
 #inspiracion__section {
-  height: 2260px;
+  height: 2960px;
 }
 iframe,
 video {
@@ -445,7 +445,8 @@ video {
   margin-top: 850px;
 }
 .inspiracion__section-div-murales,
-.inspiracion__section-div-paletas {
+.inspiracion__section-div-paletas,
+.inspiracion__section-div-notas {
   text-transform: none;
 }
 #murales {
@@ -466,7 +467,75 @@ video {
 #div-js {
   margin-top: -1610px;
 }
+.notasCliente {
+  color: #fff;
+  background-color: #ff7aba;
+  width: 840px;
+  height: 500px;
+  margin: 60px;
+  border-radius: 20px;
+  padding: 5px 0;
+  box-shadow: 2px 2px 4px #262626;
+  position: relative;
+}
+.notasCliente p {
+  margin: 20px;
+}
 
+.tareaCliente__form {
+  margin: 20px;
+}
+.tareaCliente__label {
+  font-size: 20px;
+}
+.tareaCliente__input,
+.tareaCliente__textarea,
+.tareaCliente__select {
+  display: block;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  caret-color: #bf7aff;
+  width: 400px;
+  margin: 3px 0;
+}
+.tareaCliente__textarea {
+  height: 100px;
+  overflow: scroll;
+}
+.tareasPendientes {
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  width: 380px;
+  border-radius: 7px;
+  border: 2px dotted #fff;
+  height: 290px;
+  overflow: scroll;
+  color: #fff;
+}
+#nuevaTareaPendiente{
+  border-bottom: 2px dotted #fff;
+  
+}
+#eliminarTodas, #tareaCliente__guardar {
+  color: #fff;
+  background-color: #bf7aff;
+  position: absolute;
+  bottom: 15px;
+  right: 60px;
+  padding: 5px 50px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px #262626;
+}
+#tareaCliente__guardar{
+  left: 65px;
+  font-size: 16px;
+  border: none;
+}
+#eliminarTodas:hover, #tareaCliente__guardar:hover {
+  background-color: #fff;
+  color: #bf7aff;
+}
 /* CONTACTO */
 #contacto__section {
   height: 1280px;
@@ -503,7 +572,6 @@ video {
   top: 30px;
 }
 
-
 label {
   font-size: 20px;
 }
@@ -528,7 +596,7 @@ textarea {
 select {
   font-size: 15px;
 }
-#archivos{
+#archivos {
   width: 285px;
   height: 115px;
   padding: 10px;
@@ -926,20 +994,20 @@ select {
   .contacto__formulario {
     margin: 0 45px;
   }
-/* ---- */
-.contacto__container{
-  height: 720px;
-}
-.contacto__formulario {
-  position: absolute;
-  left: 0;
-  top:200px
-}
-#archivos{
-  width: 100%;
-  margin-top: 25px;
-}
-/* ---- */
+  /* ---- */
+  .contacto__container {
+    height: 720px;
+  }
+  .contacto__formulario {
+    position: absolute;
+    left: 0;
+    top: 200px;
+  }
+  #archivos {
+    width: 100%;
+    margin-top: 25px;
+  }
+  /* ---- */
   input,
   textarea,
   select {
@@ -1312,7 +1380,7 @@ select {
     height: 460px;
     margin: 60px auto 30px;
   }
-  .contacto__container{
+  .contacto__container {
     height: 510px;
   }
   .contacto__foto {
@@ -1320,7 +1388,7 @@ select {
   }
   .contacto__formulario {
     width: 90%;
-    left: 5%
+    left: 5%;
   }
   .contacto__formulario ul {
     padding: 5%;
@@ -1337,7 +1405,7 @@ select {
     width: 50%;
     margin: 15px auto;
   }
-  #archivos{
+  #archivos {
     width: 100%;
     height: 100px;
   }
