@@ -411,7 +411,7 @@ details p {
 }
 /* INSPIRACION */
 #inspiracion__section {
-  height: 2960px;
+  height: 2860px;
 }
 iframe,
 video {
@@ -513,11 +513,11 @@ video {
   overflow: scroll;
   color: #fff;
 }
-#nuevaTareaPendiente{
+#nuevaTareaPendiente {
   border-bottom: 2px dotted #fff;
-  
 }
-#eliminarTodas, #tareaCliente__guardar {
+#eliminarTodas,
+#tareaCliente__guardar {
   color: #fff;
   background-color: #bf7aff;
   position: absolute;
@@ -527,12 +527,13 @@ video {
   border-radius: 7px;
   box-shadow: 2px 2px 4px #262626;
 }
-#tareaCliente__guardar{
+#tareaCliente__guardar {
   left: 65px;
   font-size: 16px;
   border: none;
 }
-#eliminarTodas:hover, #tareaCliente__guardar:hover {
+#eliminarTodas:hover,
+#tareaCliente__guardar:hover {
   background-color: #fff;
   color: #bf7aff;
 }
@@ -922,10 +923,11 @@ select {
   }
   /* INSPIRACION */
   #inspiracion__section {
-    height: 1600px;
+    height: 2600px;
   }
   iframe,
-  video {
+  video,
+  .notasCliente {
     height: 310px;
     width: 540px;
     margin: 50px 20px 2px;
@@ -958,6 +960,34 @@ select {
   }
   #div-js {
     margin-top: auto;
+  }
+  #webStorage {
+    position: absolute;
+    bottom: 40px;
+  }
+  .notasCliente {
+    height: 880px;
+  }
+  .tareaCliente__label {
+    font-size: 18px;
+  }
+  .tareaCliente__input,
+  .tareaCliente__textarea,
+  .tareaCliente__select {
+    width: 500px;
+  }
+  .tareasPendientes {
+    right: 18px;
+    top: 530px;
+    width: 500px;
+  }
+  #eliminarTodas,
+  #tareaCliente__guardar {
+    right: 120px;
+  }
+  #tareaCliente__guardar {
+    left: 50px;
+    top: 480px;
   }
 
   /* controls */
@@ -1280,7 +1310,8 @@ select {
 
   /* INSPIRACION */
   #inspiracion__section {
-    height: 2300px;
+    height: 3380px;
+    position: relative;
   }
   iframe,
   video {
@@ -1355,6 +1386,68 @@ select {
   }
   #sub-js {
     display: none;
+  }
+  #webStorage {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+  .inspiracion__section-div-notas {
+    top: -65px;
+    margin: 0;
+    width: 98%;
+  }
+
+  .notasCliente {
+    width: 97%;
+    height: 950px;
+    margin: 5px;
+    padding: 5px 0;
+    top: -60px;
+  }
+  .notasCliente p {
+    margin: 15px;
+  }
+
+  .tareaCliente__form {
+    margin: 15px;
+  }
+  .tareaCliente__label {
+    font-size: 15px;
+  }
+  .tareaCliente__input,
+  .tareaCliente__textarea,
+  .tareaCliente__select {
+    width: 100%;
+    border: solid 1px #2e2e2e;
+  }
+  .tareasPendientes {
+    right: 10px;
+    top: 642px;
+    width: 93%;
+    height: 235px;
+  }
+  #eliminarTodas,
+  #tareaCliente__guardar {
+    bottom: 30px;
+    left: 10px;
+    width: 94%;
+    text-align: center;
+  }
+  #eliminarTodas {
+    padding: 7px;
+  }
+  #tareaCliente__guardar {
+
+    bottom: 315px;
+    left: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  #eliminarTodas:hover,
+  #tareaCliente__guardar:hover {
+    background-color: #fff;
+    color: #bf7aff;
   }
 
   #murales,
