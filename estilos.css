@@ -537,6 +537,16 @@ video {
   background-color: #fff;
   color: #bf7aff;
 }
+#eliminarUna{
+  background-color: #fff;
+  padding: 0 5px;
+  color: red;
+  border-radius: 3px;
+}
+#eliminarUna:hover{
+  color: #fff;
+  background-color: red;
+}
 /* CONTACTO */
 #contacto__section {
   height: 1280px;
