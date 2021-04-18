@@ -32,7 +32,7 @@ function mostrarTarea() {
   for (var i = 0; i < localStorage.length; i++) {
     var id = localStorage.key(i);
     var valor = localStorage.getItem(id);
-    tareasPendientes.innerHTML =
+    tareasPendientes.innerHTML +=
     '<p id="nuevaTareaPendiente">' + id + " - " + valor +
     " - " +
     "<a href='#tareasPendientes' id='eliminarUna' onclick=\"eliminarUna('" +
